@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.mainContainer {
+  height: 100vh;
+  width: 100%;
+  background-color: white;
+}
+.favicon {
+  margin: auto;
+  border: 1px solid black;
+}
+
+.secondContainer {
+  border: 2px solid black;
+  padding: 20px 30px;
+}
+.thirdContainer {
+  padding: 20px 20px;
+  background-color: #cfe6d4;
+  margin: 20px 0;
+}
+.container {
+  padding: 10px;
+}
+.title {
+  text-align: center;
+  color: #0c9227;
+}
