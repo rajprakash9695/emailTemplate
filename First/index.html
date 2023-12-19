@@ -25,8 +25,8 @@
         overflow: hidden;
       }
       /* .container {
-  margin: auto;
-} */
+        margin: auto;
+      } */
       .logoContainer {
         display: flex;
       }
@@ -130,6 +130,13 @@
         font-size: small;
         font-family: "Poppins-Regular", Helvetica;
       }
+
+      .footerPara > a {
+        color: white;
+      }
+      a:link {
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
@@ -195,14 +202,36 @@
         <div class="footer">
           <p class="footerTitle">Follow us now</p>
           <div class="footerImg">
-            <img src="assarts/instagram.svg" alt="" height="25" />
-            <img src="assarts/facebook.svg" alt="" height="25" />
-            <img src="assarts/twitter.svg" alt="" height="25" />
+            <a
+              href="https://www.instagram.com/bksmygold/?igshid=OGQ2MjdiOTE%3D"
+              target="_blank"
+            >
+              <img src="assarts/instagram.svg" alt="" height="25" />
+            </a>
+            <a
+              href="https://www.facebook.com/people/MyGold/100090106620734/"
+              target="_blank"
+            >
+              <img src="assarts/facebook.svg" alt="" height="25" />
+            </a>
+            <a
+              href="https://twitter.com/BKSMyGold?t=jIluY5JnwnVTzmhtyL3PJQ&s=09"
+              target="_blank"
+            >
+              <img src="assarts/twitter.svg" alt="" height="25" />
+            </a>
           </div>
+
           <div class="footerPara">
-            <p>Unsubscribe</p>
-            <p>Contact us</p>
-            <p>Terms and Policy</p>
+            <a href="#">
+              <p>Unsubscribe</p>
+            </a>
+            <a href="#">
+              <p>Contact us</p>
+            </a>
+            <a href="#">
+              <p>Terms and Policy</p>
+            </a>
           </div>
         </div>
       </div>

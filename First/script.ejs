@@ -4,6 +4,237 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+
+      :root {
+        --white-color: rgba(255, 255, 255, 1);
+        --teritary-colors: rgba(12, 146, 39, 1);
+        --accent-color2: rgba(250, 250, 250, 1);
+      }
+
+      .mainContainer {
+        max-width: 30rem;
+        background-color: white;
+        margin: auto;
+        border: 1px solid black;
+        overflow: hidden;
+      }
+      /* .container {
+        margin: auto;
+      } */
+      .logoContainer {
+        display: flex;
+      }
+      .logo {
+        margin: auto;
+      }
+
+      .secondContainer {
+        padding: 20px 30px;
+      }
+      .thirdContainer {
+        padding: 20px 20px;
+        background-color: #e0eee3;
+        margin: 20px 0;
+      }
+      .titleImgCon {
+        display: flex;
+      }
+      .titleImg {
+        margin: auto;
+        width: 200px;
+      }
+      .title {
+        font-family: "Poppins-SemiBold", Helvetica;
+        font-weight: 600;
+        color: #0b9127;
+        font-size: 32px;
+        text-align: center;
+      }
+      .hLine {
+        height: 0;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .recived {
+        display: flex;
+        justify-content: space-between;
+        line-height: 20px;
+      }
+      .date {
+        font-size: small;
+      }
+      .rupee {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .tax {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+      }
+      .tax > p {
+        font-size: small;
+      }
+      .fourthContainer > h1 {
+        font-family: "Poppins-SemiBold", Helvetica;
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+        margin-bottom: 10px;
+        margin-top: 20px;
+      }
+      .fourthContainer > p {
+        font-size: small;
+        font-family: "Roboto", sans-serif;
+      }
+
+      /* footer */
+
+      .footer {
+        padding: 30px 30px;
+        color: var(--white-color);
+        background: linear-gradient(
+          180deg,
+          rgb(96, 18, 63) 0%,
+          rgb(10, 26, 84) 100%
+        );
+      }
+
+      .footerTitle {
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .footerImg {
+        margin-top: 15px;
+        gap: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footerPara {
+        gap: 2rem;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+        font-family: "Poppins-Regular", Helvetica;
+      }
+
+      .footerPara > a {
+        color: white;
+      }
+      a:link {
+        text-decoration: none;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="mainContainer">
+      <div class="container">
+        <div class="logoContainer">
+          <img src="assarts/favicon.svg" alt="image" class="logo" />
+        </div>
+        <div class="secondContainer">
+          <div class="thirdContainer">
+            <div class="titleImgCon">
+              <img src="assarts/success 1.png" alt="image" class="titleImg" />
+            </div>
+            <h2 class="title">Gold Received</h2>
+            <hr class="hLine" />
+            <div>
+              <div class="recived">
+                <p class="date">Recived from</p>
+                <p class="date"><%= 03 , Apr 2023 %></p>
+              </div>
+              <div class="recived">
+                <p class="rupee"><%= Padma Priya %></p>
+                <p class="rupee"><%= ₹ 500 %></p>
+              </div>
+              <hr class="hLine" />
+              <div class="tax">
+                <p>Txn. ID</p>
+                <p>:</p>
+                <p><%= TYNV4N4448U9W8R8 %></p>
+              </div>
+              <hr class="hLine" />
+              <div class="tax">
+                <p>Debited from</p>
+                <p>:</p>
+                <p><%= xxxxxxx3695 ICICI Bank %></p>
+              </div>
+              <hr class="hLine" />
+              <div class="tax">
+                <p>Bank Ref. No</p>
+                <p>:</p>
+                <p><%= 3669448646548 %></p>
+              </div>
+            </div>
+          </div>
+          <div class="fourthContainer">
+            <h1 class="secondTitle">Hi <%= Raj %> Jewelars!</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Aliquet nunc ridiculus
+              suspendisse nibh venenatis. Porttitor turpis massa tellus varius
+              elementum. Vel turpis sagittis dis amet fermentum sed. At
+              vestibulum tincidunt sem a nec. Enim condimentum elementum egestas
+              sodales sed et congue.
+
+              <br />
+              Donec sodales quis aenean vehicula integer pellentesque aliquam
+              egestas. Vitae purus amet tempor eget. Enim eu enim vitae et. Duis
+              vitae senectus quis suspendisse morbi nisl consequat dui arcu.
+              Quam adipiscing integer pretium nibh libero.
+            </p>
+          </div>
+        </div>
+
+        <div class="footer">
+          <p class="footerTitle">Follow us now</p>
+          <div class="footerImg">
+            <a
+              href="https://www.instagram.com/bksmygold/?igshid=OGQ2MjdiOTE%3D"
+              target="_blank"
+            >
+              <img src="assarts/instagram.svg" alt="" height="25" />
+            </a>
+            <a
+              href="https://www.facebook.com/people/MyGold/100090106620734/"
+              target="_blank"
+            >
+              <img src="assarts/facebook.svg" alt="" height="25" />
+            </a>
+            <a
+              href="https://twitter.com/BKSMyGold?t=jIluY5JnwnVTzmhtyL3PJQ&s=09"
+              target="_blank"
+            >
+              <img src="assarts/twitter.svg" alt="" height="25" />
+            </a>
+          </div>
+
+          <div class="footerPara">
+            <a href="#">
+              <p>Unsubscribe</p>
+            </a>
+            <a href="#">
+              <p>Contact us</p>
+            </a>
+            <a href="#">
+              <p>Terms and Policy</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
