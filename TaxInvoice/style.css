@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Lato", sans-serif; */
+  /* font-family: "Poppins", sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  padding: 10px 20px;
+  max-width: 50rem;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.taxInvoice {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.header {
+  line-height: 18px;
+}
+
+.header > h1 {
+  font-size: small;
+  margin-bottom: 10px;
+}
+
+.header > p {
+  font-size: smaller;
+  max-width: 20rem;
+}
+.header > p > span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.img > p {
+  font-size: smaller;
+}
+.img > img {
+  max-width: 250px;
+}
+.table {
+  width: 100%;
+}
+.tableHead {
+  font-size: small;
+  font-weight: 600;
+}
+.tableBody {
+  font-size: smaller;
+  line-height: 15px;
+}
+
+.total {
+  font-size: small;
+  font-weight: 600;
+  margin: 10px 0 15px 0px;
+}
+.description {
+  font-size: smaller;
+  margin: 10px 0 15px 0px;
+}
+.regAddress {
+  font-size: smaller;
+  margin: 10px 0 15px 0px;
+}
+.qr {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.qrImage {
+  width: 150px;
+}
+.sign > p {
+  text-align: center;
+  font-size: smaller;
+}

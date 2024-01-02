@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tax Invoice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* font-family: "Lato", sans-serif; */
+        /* font-family: "Poppins", sans-serif; */
+        font-family: "Roboto", sans-serif;
+      }
+
+      .container {
+        padding: 10px 10px;
+        /* max-width: 40rem; */
+        /* border: 1px solid black; */
+        margin: auto;
+      }
+
+      .taxInvoice {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+      .header {
+        line-height: 18px;
+      }
+
+      .header > h1 {
+        font-size: small;
+        margin-bottom: 10px;
+      }
+
+      .header > p {
+        font-size: smaller;
+        max-width: 20rem;
+      }
+      .header > p > span {
+        font-size: 14px;
+        font-weight: 500;
+      }
+
+      .img > p {
+        font-size: smaller;
+      }
+      .img > img {
+        max-width: 250px;
+      }
+      .table {
+        width: 100%;
+      }
+      .tableHead {
+        font-size: small;
+        font-weight: 600;
+      }
+      .tableBody {
+        font-size: smaller;
+        line-height: 15px;
+      }
+
+      .total {
+        font-size: small;
+        font-weight: 600;
+        margin: 10px 0 15px 0px;
+      }
+      .description {
+        font-size: smaller;
+        margin: 10px 0 15px 0px;
+      }
+      .regAddress {
+        font-size: smaller;
+        margin: 10px 0 15px 0px;
+      }
+      .qr {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+      }
+      .qrImage {
+        width: 150px;
+      }
+      .sign > p {
+        text-align: center;
+        font-size: smaller;
+      }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="taxInvoice">
+        <div class="header">
+          <h1>Tax Invoice</h1>
+
+          <p class="">Applicability for Reverse Charge: <span>No</span></p>
+          <p class="">MMTC-PAMP Invoive Number: <span>MPL23S000000987</span></p>
+          <p class="">Invoice Date: <span>07/12/2023</span></p>
+          <p class="">Order : <span>MPL_-uGGHDJHj</span></p>
+        </div>
+        <div class="img">
+          <p>original customer copy</p>
+          <img
+            src="https://www.mmtcpamp.com/documents/41872/175737/mmtc-logo-gold.webp/f424abbe-a728-0be1-2751-763c975ebef5?t=1663855805898&download=true"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="taxInvoice">
+        <div class="header">
+          <h1>Bill To</h1>
+
+          <p class="">Customer Name: <span>Suneel kumar</span></p>
+          <p class="">Customer Phone Number: <span>23S000000987</span></p>
+          <p class="">Customer Email Id : <span>suneel@gmail.com</span></p>
+          <p class="">Customer PAN : <span>NA</span></p>
+          <p class="">Customer Pincode : <span>226010</span></p>
+          <p class="">Customer State : <span>UP</span></p>
+          <p class="">Place of Supply : <span>interstate</span></p>
+          <p class="">State Code : <span>9</span></p>
+        </div>
+        <div class="header">
+          <h1>Delivery At</h1>
+
+          <p class="">Customer Name: <span>Suneel kumar</span></p>
+          <p class="">Customer Phone Number: <span>23S000000987</span></p>
+          <p class="">Customer Pincode : <span>226010</span></p>
+          <p class="">Customer State : <span>UP</span></p>
+          <p class="">State Code : <span>9</span></p>
+        </div>
+      </div>
+      <div class="taxInvoice">
+        <div class="header">
+          <h1>Sold By</h1>
+
+          <p class="">
+            MMTC-PAMP INDIA PRIVATE LIMITED ROJKA MEO INDUSTRIAL ESTATE, TEHSIL
+            NUH DISTRICT MEWAT SOHNA 122103, HARYANA
+          </p>
+          <p>INDIA</p>
+        </div>
+        <div class="header" style="margin-top: 20px">
+          <p class="">PAN- <span> AAFCM3576K</span></p>
+          <p class="">GSTIN- <span> 06AAFCM3576K1Z5</span></p>
+        </div>
+      </div>
+      <div class="tableContainer">
+        <table class="table">
+          <thead>
+            <tr class="tableHead">
+              <td>Description</td>
+              <td>Grams</td>
+              <td>Amt Per Gram</td>
+              <td>Total Amt</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="tableBody">
+              <td>24K 99.99% Purity Gold(HSN Code: 71081300)</td>
+              <td></td>
+              <td></td>
+              <td>Rs.25.00</td>
+            </tr>
+            <tr class="tableBody">
+              <td>Discount -</td>
+              <td></td>
+              <td></td>
+              <td>Rs.25.00</td>
+            </tr>
+            <tr class="tableBody">
+              <td>Applicable Taxes</td>
+              <td></td>
+              <td></td>
+              <td>Rs.25.00</td>
+            </tr>
+            <tr class="tableBody">
+              <td>IGST @ 1.50 %</td>
+              <td></td>
+              <td></td>
+              <td>Rs.25.00</td>
+            </tr>
+            <tr class="tableBody">
+              <td>SGST @ 1.50 %</td>
+              <td></td>
+              <td></td>
+              <td>Rs.25.00</td>
+            </tr>
+            <tr class="tableBody">
+              <td>TCS (if any) @ 0.1 %</td>
+              <td>556</td>
+              <td>656456</td>
+              <td>Rs.25.00</td>
+            </tr>
+            <tr class="tableBody">
+              <td>Total Invoice Value</td>
+              <td>1132</td>
+              <td>455555</td>
+              <td>Rs.5604.19</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h2 class="total">
+        Total Amount in Words: Five Thousand Six Hundred Four Rupees And
+        Nineteen Paise Only
+      </h2>
+      <p class="description">
+        Declaration: We declare that the above quantity of goods are kept by the
+        seller in a safe vault on behalf of the buyer. It can be gifted, sold
+        back to the seller or redeemed and delivered in minted product of the
+        manufacturer as per the terms & Conditions agreed by the Customer/Buyer.
+        The Buyer has to pay extra manufacturing & Delivery charges at the time
+        of redemption.
+      </p>
+      <p class="regAddress">
+        Registered Address: ROJKA MEO INDUSTRIAL ESTATE, TEHSIL NUH, DISTRICT
+        MEWAT SOHNA 122103, HARYANA INDIA, CIN: U27310HR2008PTC042218
+      </p>
+      <div class="qr">
+        <img
+          src="https://pngimg.com/d/qr_code_PNG33.png"
+          alt="img"
+          class="qrImage"
+        />
+        <div class="sign">
+          <p>For MMTC-PAMP INDIA PRIVATE LIMITED</p>
+          <p>(Authorized Signatory)</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
