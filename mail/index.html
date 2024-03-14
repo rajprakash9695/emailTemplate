@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .mainContainer {
+        max-width: 30rem;
+        background-color: white;
+        margin: auto;
+        border: 1px solid black;
+        overflow: hidden;
+      }
+
+      .logoContainer {
+        display: flex;
+        margin-top: 30px;
+      }
+
+      .logo {
+        margin: auto;
+      }
+
+      .container {
+        position: relative;
+        margin-inline: 15px;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        background-color: #fff8fd;
+        text-align: center;
+        overflow: hidden;
+        box-shadow: 0px 0px 2px 2px lightblue;
+        margin-top: 30px;
+        margin-bottom: 30px;
+      }
+      .gold-bar {
+        display: flex;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .name {
+        font-size: large;
+        font-weight: 700;
+      }
+      .cong {
+        font-size: 24px;
+        font-weight: 600;
+        color: #14c082;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+      .thank {
+        font-size: small;
+        color: rgb(138, 127, 127);
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-weight: 500;
+      }
+
+      .firstRound {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: #ffeefc;
+      }
+
+      .secondRound {
+        position: absolute;
+        top: -20px;
+        right: -20px;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: #ffd9fb;
+      }
+
+      .thirdRound {
+        position: absolute;
+        bottom: 50px;
+        right: 0;
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+        background-color: #ffd9fb;
+      }
+
+      .fourthRound {
+        position: absolute;
+        bottom: -20px;
+        left: -20px;
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        background-color: #fff4f6;
+        z-index: -1;
+      }
+
+      .secondContainer {
+        margin-inline: 10px;
+        margin-bottom: 30px;
+      }
+      .secondContainer p {
+        font-size: small;
+        margin-bottom: 10px;
+      }
+
+      .footer {
+        padding: 30px 30px;
+        color: white;
+        background-color: #181951;
+      }
+
+      .footerTitle {
+        text-align: center;
+        font-size: 14px;
+      }
+
+      .footerImg {
+        margin-top: 15px;
+        gap: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footerPara {
+        gap: 2rem;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+        font-family: 'Poppins-Regular', Helvetica;
+      }
+
+      .footerPara > a {
+        color: white;
+      }
+
+      a:link {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="mainContainer">
+      <div class="logoContainer">
+        <img src="assarts/favicon.svg" alt="image" class="logo" height="80" />
+      </div>
+      <div class="container">
+        <div class="gold-bar">
+          <img
+            src="./assarts/gold-bar.svg"
+            alt="Gold Bar"
+            height="150"
+            style="margin: auto"
+          />
+        </div>
+        <div style="z-index: 1">
+          <p class="name">Dear Jitender Singh Danu</p>
+          <p class="cong">Congratulations!</p>
+          <p class="name">On 1st My Gold Investment Plan</p>
+          <p class="thank">
+            Thank you for using MyGold app - 'A <br />
+            Complete Gold Ecosystem', Powered by <br />
+            Blockchain.
+          </p>
+        </div>
+        <div class="firstRound"></div>
+        <div class="secondRound"></div>
+        <div class="thirdRound"></div>
+        <div class="fourthRound"></div>
+      </div>
+      <div class="secondContainer">
+        <p>
+          Congratulations, you have started your first MyGold Investment Plan
+          aed1d8!
+        </p>
+        <p>Now earn ON GOLD, IN GOLD.</p>
+      </div>
+
+      <!-- <footer></footer> -->
+      <div class="footer">
+        <p class="footerTitle">Follow us now</p>
+        <div class="footerImg">
+          <a
+            href="https://www.facebook.com/people/MyGold/100090106620734/"
+            target="_blank"
+          >
+            <img src="assarts/facebook.svg" alt="" height="25" />
+          </a>
+          <a
+            href="https://twitter.com/BKSMyGold?t=jIluY5JnwnVTzmhtyL3PJQ&s=09"
+            target="_blank"
+          >
+            <img src="assarts/twitter.svg" alt="" height="25" />
+          </a>
+          <a
+            href="https://www.instagram.com/bksmygold/?igshid=OGQ2MjdiOTE%3D"
+            target="_blank"
+          >
+            <img src="assarts/instagram.svg" alt="" height="25" />
+          </a>
+        </div>
+
+        <div class="footerPara">
+          <a href="#">
+            <p>Unsubscribe</p>
+          </a>
+          <a href="#">
+            <p>Contact us</p>
+          </a>
+          <a href="#">
+            <p>Terms and Policy</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
