@@ -1,0 +1,119 @@
+<!-- template.ejs -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CUSTODY RELEASE NOTE</title>
+    <style>
+      .main {
+        padding: 5%;
+        max-width: 50rem;
+        border: 1px solid #dfa9a9;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+      }
+      .heading {
+        color: #d6973ff6;
+        font-size: 48px;
+        text-align: center;
+        margin: 30px 0px 30px 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .description {
+        font-size: 20px;
+        text-align: center;
+      }
+      .midSection {
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+      }
+
+      table,
+      th,
+      td {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 5px 4px 5px 4px;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-top: 20px;
+      }
+
+      .image {
+        height: 100;
+        object-fit: cover;
+      }
+      .footer-sub {
+        line-height: 5px;
+      }
+
+      .custody {
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .mmtc {
+        font-size: 24px;
+        font-weight: 500;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="logo">
+        <img
+          src="./assarts/favicon.svg"
+          alt="Logo"
+          height="100"
+          style="margin: auto"
+        />
+      </div>
+
+      <p class="heading">CUSTODY RELEASE NOTE</p>
+      <p class="description">
+        This document acknowledges the release of custody of <br />
+        your precious Gold from our trusted establishment
+      </p>
+      <div class="midSection">
+        <table>
+          <tbody>
+            <tr>
+              <td>Name of Customer</td>
+              <td>:</td>
+              <td><%= customerName %></td>
+            </tr>
+            <tr>
+              <td>Weight of Gold(grams)</td>
+              <td>:</td>
+              <td><%= goldWeight %></td>
+            </tr>
+            <tr>
+              <td>Date of Custody Taken</td>
+              <td>:</td>
+              <td><%= custodyDate %></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="footer">
+        <img src="<%= imageUrl %>" alt="MMTC" class="image" />
+        <div class="footer-sub">
+          <p class="custody">Custody Released by:</p>
+          <p class="mmtc">MMTC PAMP</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
