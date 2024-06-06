@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 14px;
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+      }
+
+      .header,
+      .header2,
+      .footer,
+      .footer1 {
+        margin-bottom: 20px;
+      }
+
+      .header,
+      .footer1 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .header2 {
+        line-height: 1.5;
+      }
+
+      .span1 {
+        font-weight: 600;
+      }
+
+      .head {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 5px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+      }
+
+      th,
+      td {
+        padding: 12px 15px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #ededed;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      .td1 {
+        padding: 16px;
+        line-height: 1;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+      }
+
+      .hr {
+        border: dotted 0.05px;
+        border-color: #e7d4d4;
+        margin-top: -10px;
+        margin-bottom: 5px;
+      }
+
+      .declaration,
+      .registered-address {
+        margin-bottom: 10px;
+      }
+
+      .declaration span,
+      .registered-address span {
+        font-weight: 600;
+      }
+
+      img {
+        vertical-align: middle;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="margin-top: -20px">
+        <div>
+          <p class="head">Tax Invoice</p>
+          <div class="header2">
+            <p>
+              Applicability to Reverse Charge: <span class="span1">No</span>
+            </p>
+            <p>
+              BKS MyVault Invoice Number:
+              <span class="span1">9128855658656</span>
+            </p>
+            <p>Invoice Date: <span class="span1">07/12/2023</span></p>
+            <p>Order: <span class="span1">#877657657657</span></p>
+          </div>
+        </div>
+        <div>
+          <p class="head">Original - Customer Copy</p>
+          <img
+            src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mmtc.png"
+            alt="mmtc"
+            width="250px"
+          />
+        </div>
+      </div>
+
+      <div class="header" style="margin-top: -30px">
+        <div>
+          <p class="head">Bill To</p>
+          <div class="header2">
+            <p>Customer Name: <span class="span1">Suneel Kumar</span></p>
+            <p>Customer Mobile No.: <span class="span1">23S000000987</span></p>
+            <p>
+              Customer Email ID: <span class="span1">suneel@gmail.com</span>
+            </p>
+            <p>Customer PAN No.: <span class="span1">NA</span></p>
+            <p>Customer Pincode: <span class="span1">226010</span></p>
+            <p>Customer State: <span class="span1">UP</span></p>
+            <p>Place of Supply: <span class="span1">Interstate</span></p>
+            <p>State Code: <span class="span1">9</span></p>
+          </div>
+        </div>
+        <div>
+          <p class="head">Delivery at</p>
+          <div class="header2">
+            <p>Customer Name: <span class="span1">Suneel Kumar</span></p>
+            <p>Customer Mobile No.: <span class="span1">23S000000987</span></p>
+            <p>Customer Pincode: <span class="span1">226010</span></p>
+            <p>Customer State: <span class="span1">UP</span></p>
+            <p>State Code: <span class="span1">009</span></p>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top: -30px" class="head">Sold By</p>
+      <div class="header">
+        <div>
+          <p class="span1" style="margin-bottom: 5px">
+            BKS MyVault Private Limited
+          </p>
+          <p style="max-width: 15rem">
+            M-13 Gole Market, Mahanagar, Lucknow, Uttar Pradesh - 220209
+          </p>
+        </div>
+        <div style="padding-right: 80px">
+          <p style="margin-bottom: 5px">
+            PAN No: <span class="span1">GFAKSIU8</span>
+          </p>
+          <p>GSTIN No: <span class="span1">9345636vg5g</span></p>
+        </div>
+      </div>
+
+      <table>
+        <thead style="background-color: #ededed">
+          <tr>
+            <th>Description</th>
+            <th align="center">Grams</th>
+            <th align="center">Amt Per Gram</th>
+            <th align="right">Total Amount</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              24k 99.99% Purity Gold <br />
+              (HSN Code 8278881)
+            </td>
+            <td align="center">0.0200 gm</td>
+            <td align="center">₹ 7,640.00</td>
+            <td align="right">₹ 1,640.00</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="hr" />
+
+      <p class="head">Applicable Taxes</p>
+      <div class="header">
+        <div>
+          <p>IGST @3%</p>
+          <p>TCS (if any) @0.1%</p>
+        </div>
+        <div>
+          <p class="span1">₹ 49.20</p>
+          <p class="span1">₹ 1.64</p>
+        </div>
+      </div>
+
+      <hr class="hr" />
+
+      <div class="header">
+        <div>
+          <p>Total Invoice Value</p>
+          <p>
+            Total Amount In Words:
+            <span
+              >One Thousand Six Hundred Ninety-One and Eighty-Four Paise</span
+            >
+          </p>
+        </div>
+        <p class="span1">₹ 1,691.84</p>
+      </div>
+
+      <hr class="hr" />
+
+      <p class="declaration">
+        <span>Declaration:</span> We declare that the above quantity of goods
+        are kept by the seller in a safe vault on behalf of the buyer. It can be
+        gifted, sold back to the seller, or redeemed and delivered in minted
+        product of the manufacturer as per the terms & conditions agreed by the
+        Customer/Buyer. The Buyer has to pay extra manufacturing & delivery
+        charges at the time of redemption.
+      </p>
+
+      <p class="registered-address">
+        <span>Registered Address:</span> ROJKA MEO INDUSTRIAL ESTATE, TEHSIL
+        NUH, DISTRICT MEWAT SOHNA 122103, HARYANA INDIA,<br />
+        CIN: U27310HR2008PTC042218
+      </p>
+
+      <div class="footer1">
+        <img
+          src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/myvault.png"
+          alt=""
+          height="80px"
+        />
+        <p class="registered-address">
+          <span>Note:</span> This is a computer-generated invoice. No signature
+          required.
+        </p>
+      </div>
+
+      <div class="footer">
+        <img
+          src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mygold.png"
+          alt="mygold"
+          height="50px"
+        />
+      </div>
+    </div>
+  </body>
+</html>
