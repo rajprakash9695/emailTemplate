@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invoice</title>
+    <title>Invoice2</title>
     <style>
       * {
         margin: 0;
@@ -114,54 +114,55 @@
     <div class="container">
       <div class="header" style="margin-top: -20px">
         <div>
-          <p class="head">Tax Invoice</p>
+          <p class="head">Purchase Confirmation</p>
           <div class="header2">
             <p class="text-color">
-              Applicability to Reverse Charge: <span class="span1">No</span>
+              BKS MyVault Purchase Reference N0.:
+              <span class="span1">2456454685765845</span>
             </p>
             <p class="text-color">
-              BKS MyVault Invoice Number:
-              <span class="span1">9128855658656</span>
-            </p>
-            <p class="text-color">
-              Invoice Date: <span class="span1">07/12/2023</span>
+              Date: <span class="span1">07/12/2023</span>
             </p>
             <p class="text-color">
               Order: <span class="span1">#877657657657</span>
             </p>
           </div>
         </div>
-        <div style="padding-right: 45px">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 45px;
+          "
+        >
           <p class="head">Original - Customer Copy</p>
           <img
-            src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mmtc.png"
+            src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/myvault.png"
             alt="mmtc"
-            width="170px"
+            width="100px"
           />
         </div>
       </div>
 
-      <div class="header" style="margin-top: -20px">
+      <div class="header" style="margin-top: -40px">
         <div>
-          <p class="head">Bill To</p>
+          <p class="head">Seller Details</p>
           <div class="header2">
             <p class="text-color">
-              Customer Name: <span class="span1">Suneel Kumar</span>
+              Seller Name: <span class="span1">Suneel Kumar</span>
             </p>
             <p class="text-color">
-              Customer Mobile No.: <span class="span1">23S000000987</span>
+              Seller Mobile No.: <span class="span1">23S000000987</span>
             </p>
             <p class="text-color">
-              Customer Email ID: <span class="span1">suneel@gmail.com</span>
+              Seller Email ID: <span class="span1">suneel@gmail.com</span>
             </p>
             <p class="text-color">
-              Customer PAN No.: <span class="span1">NA</span>
+              Seller Pincode: <span class="span1">226010</span>
             </p>
             <p class="text-color">
-              Customer Pincode: <span class="span1">226010</span>
-            </p>
-            <p class="text-color">
-              Customer State: <span class="span1">UP</span>
+              Seller State: <span class="span1">UP</span>
             </p>
             <p class="text-color">
               Place of Supply: <span class="span1">Interstate</span>
@@ -169,27 +170,9 @@
             <p class="text-color">State Code: <span class="span1">9</span></p>
           </div>
         </div>
-        <div style="padding-right: 14px">
-          <p class="head">Delivery at</p>
-          <div class="header2">
-            <p class="text-color">
-              Customer Name: <span class="span1">Suneel Kumar</span>
-            </p>
-            <p class="text-color">
-              Customer Mobile No.: <span class="span1">23S000000987</span>
-            </p>
-            <p class="text-color">
-              Customer Pincode: <span class="span1">226010</span>
-            </p>
-            <p class="text-color">
-              Customer State: <span class="span1">UP</span>
-            </p>
-            <p class="text-color">State Code: <span class="span1">009</span></p>
-          </div>
-        </div>
       </div>
 
-      <p style="margin-top: -20px" class="head">Sold By</p>
+      <p style="margin-top: -20px" class="head">Bought By</p>
       <div class="header">
         <div>
           <p class="span1" style="margin-bottom: 5px">
@@ -213,42 +196,21 @@
         <thead>
           <tr>
             <th align="left">Description</th>
-            <th align="center">Grams</th>
+            <th align="center">Melted Weight Grams</th>
+            <th align="center">Purity</th>
+            <th align="center">Fine Weight Grams</th>
             <th align="center">Amt Per Gram</th>
             <th align="right">Total Amount</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td align="left">
-              <p style="max-width: 8rem">
-                24k 99.99% Purity Gold (HSN Code 8278881)
-              </p>
-            </td>
-            <td align="center">0.0200 gm</td>
-            <td align="center">₹ 7,640.00</td>
-            <td align="right">₹ 1,640.00</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <hr class="hr" />
-      <table>
-        <tbody>
-          <tr>
-            <td align="left">
-              <p class="head">Applicable Taxes</p>
-              <p style="margin-bottom: 4px">IGST @3%</p>
-              <p>TCS (if any) @0.1%</p>
-            </td>
-            <td align="center"></td>
-            <td align="center"></td>
-            <td align="right">
-              <div style="margin-top: 18px">
-                <p class="span1" style="margin-bottom: 4px">₹ 49.20</p>
-                <p class="span1">₹ 1.64</p>
-              </div>
-            </td>
+            <td align="left">Old Gold</td>
+            <td align="center">10.0200 gm</td>
+            <td align="center">99.99%</td>
+            <td align="center">9.0200 gm</td>
+            <td align="center">₹7,640.00</td>
+            <td align="right" class="span1">₹1,640.00</td>
           </tr>
         </tbody>
       </table>
@@ -272,8 +234,32 @@
             </td>
             <td align="center"></td>
             <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
             <td align="right">
               <p class="span1" style="margin-top: -18px">₹ 1,691.84</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="hr" />
+
+      <table>
+        <tbody>
+          <tr>
+            <td align="left">
+              <div>
+                <p class="head">Payment Details</p>
+                <p>Mode Of Payment</p>
+              </div>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="right">
+              <p class="span1" style="margin-top: 25px">UPI</p>
             </td>
           </tr>
         </tbody>
@@ -296,13 +282,8 @@
         CIN: U27310HR2008PTC042218
       </p>
 
-      <div class="footer1" style="align-items: center; margin-top: 20px">
-        <img
-          src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/myvault.png"
-          alt=""
-          height="100px"
-        />
-        <p class="registered-address">
+      <div class="footer1" style="display: flex; justify-content: end">
+        <p class="registered-address span1">
           <span>Note:</span> This is a computer-generated invoice. No signature
           required.
         </p>
