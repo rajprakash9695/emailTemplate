@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invoice</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        margin-top: 40px;
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: #fff;
+        /* border: 1px solid black; */
+      }
+
+      .logo {
+        display: flex;
+        justify-content: center;
+      }
+
+      .para {
+        font-size: 16px;
+        margin: 30px 0 15px 0;
+      }
+
+      .amount {
+        font-size: 14px;
+      }
+
+      .header {
+        line-height: 18px;
+      }
+      .text-color {
+        color: gray;
+      }
+
+      .span1 {
+        font-weight: 600;
+        color: black;
+      }
+
+      .flex {
+        gap: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+      }
+
+      th,
+      td {
+        padding: 12px 15px;
+      }
+
+      th {
+        background-color: #dacece;
+      }
+
+      .td1 {
+        padding: 16px;
+        line-height: 1;
+      }
+      .hr {
+        border: dotted 0.05px;
+        border-color: #e7d4d4;
+        margin-top: -10px;
+        margin-bottom: 5px;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+
+        align-items: end;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mygold.png"
+          alt="mmtc"
+          width="180px"
+        />
+      </div>
+      <p class="para span1" style="text-align: center; margin: 20px">
+        Refund Invoice
+      </p>
+      <div class="flex">
+        <div>
+          <p class="para span1">MyGold PVT Ltd.</p>
+          <div class="header">
+            <p class="text-color" style="max-width: 12rem">
+              M-13, Gole Market, Mahanagar, Lucknow, Uttar Pradesh 226006
+            </p>
+            <p class="text-color">
+              PAN No.: <span class="span1">AHGDT5567</span>
+            </p>
+            <p class="text-color">
+              GSTIN: <span class="span1">AHGDT5567</span>
+            </p>
+            <p class="text-color">
+              CIN No.: <span class="span1">AHGDT5567</span>
+            </p>
+          </div>
+        </div>
+        <div class="header" style="margin-top: 40px; text-align: end">
+          <p class="text-color">
+            Billed On: Date: <span class="span1">21/04/2024</span>
+          </p>
+          <p class="text-color">
+            Due On: Date: <span class="span1">21/04/2024</span>
+          </p>
+          <p class="text-color">
+            Invoice No.: <span class="span1">INGY45687</span>
+          </p>
+        </div>
+      </div>
+      <div class="flex" style="margin-bottom: 30px">
+        <div>
+          <p class="para span1">Bill To</p>
+          <div class="header">
+            <p class="text-color">
+              Name: <span class="span1">Suneel Kumar</span>
+            </p>
+            <p class="text-color">
+              Mobile No.: <span class="span1">9686579542</span>
+            </p>
+            <p class="text-color">
+              Email Id.: <span class="span1">sunilku96@gmail.com</span>
+            </p>
+          </div>
+        </div>
+        <div class="header" style="margin-top: 40px">
+          <p>Total Refuned on <span class="span1">02 June 2024</span></p>
+          <p class="span1 amount" style="text-align: end">₹ 1690.00</p>
+        </div>
+      </div>
+      <table>
+        <thead>
+          <tr style="background-color: #ededed; font-weight: 600">
+            <td align="left">Date</td>
+            <td align="left">Item Description</td>
+            <td align="right">Total Amount</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left">2 jun 2024</td>
+            <td align="left">
+              <div class="header">
+                <p class="span1">Gold Gift Cancelled</p>
+                <p class="text-color">Facility fee refunded</p>
+              </div>
+            </td>
+            <td align="right" class="span1">Amount ₹ 1440.00</td>
+          </tr>
+          <tr>
+            <td align="left">2 jun 2024</td>
+            <td align="left">
+              <div class="header">
+                <p class="span1">Gold Gift Cancelled</p>
+                <p class="text-color">Facility fee refunded</p>
+              </div>
+            </td>
+            <td align="right" class="span1">Amount ₹ 1440.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr class="hr" />
+      <table>
+        <tbody>
+          <tr class="span1">
+            <td align="left"></td>
+            <td align="right">Total Amount</td>
+            <td align="right" class="amount">₹ 2,640.00</td>
+          </tr>
+          <tr class="span1">
+            <td align="left"></td>
+            <td align="right">GST 3%</td>
+            <td align="right" class="amount">₹ 40.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <hr class="hr" />
+      <table>
+        <tbody>
+          <tr class="span1">
+            <td align="left"></td>
+            <td align="right">Total Refund Amount</td>
+            <td align="right" class="amount">₹ 1690.00</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="footer">
+        <img
+          src="https://mygold-app-assets.s3.ap-south-1.amazonaws.com/image/testSign.png"
+          alt="sign"
+        />
+        <p>Authorized Signature</p>
+      </div>
+    </div>
+  </body>
+</html>
