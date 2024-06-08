@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Invoice2</title>
+    <title>Sell Old Gold</title>
     <style>
       * {
         margin: 0;
@@ -14,7 +14,6 @@
       body {
         font-size: 12px;
         font-family: 'Roboto', sans-serif;
-        background-color: #f8f9fa;
         color: #333;
         padding: 20px;
         margin-top: 20px;
@@ -23,7 +22,6 @@
       .container {
         max-width: 800px;
         margin: 0 auto;
-        background-color: #fff;
       }
 
       .header,
@@ -117,14 +115,11 @@
           <p class="head">Purchase Confirmation</p>
           <div class="header2">
             <p class="text-color">
-              BKS MyVault Purchase Reference N0.:
+              Reference N0.:
               <span class="span1">2456454685765845</span>
             </p>
             <p class="text-color">
               Date: <span class="span1">07/12/2023</span>
-            </p>
-            <p class="text-color">
-              Order: <span class="span1">#877657657657</span>
             </p>
           </div>
         </div>
@@ -136,16 +131,18 @@
             padding-right: 45px;
           "
         >
-          <p class="head">Original - Customer Copy</p>
-          <img
-            src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/myvault.png"
-            alt="mmtc"
-            width="100px"
-          />
+          <div style="padding-right: 45px">
+            <p class="head">Original - Customer Copy</p>
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mygold.png"
+              alt="mgold"
+              width="130px"
+            />
+          </div>
         </div>
       </div>
 
-      <div class="header" style="margin-top: -40px">
+      <div class="header" style="margin-top: -20px">
         <div>
           <p class="head">Seller Details</p>
           <div class="header2">
@@ -266,35 +263,14 @@
       </table>
 
       <hr class="hr" />
-
-      <p class="declaration">
-        <span>Declaration:</span> We declare that the above quantity of goods
-        are kept by the seller in a safe vault on behalf of the buyer. It can be
-        gifted, sold back to the seller, or redeemed and delivered in minted
-        product of the manufacturer as per the terms & conditions agreed by the
-        Customer/Buyer. The Buyer has to pay extra manufacturing & delivery
-        charges at the time of redemption.
-      </p>
-
-      <p class="registered-address">
-        <span>Registered Address:</span> ROJKA MEO INDUSTRIAL ESTATE, TEHSIL
-        NUH, DISTRICT MEWAT SOHNA 122103, HARYANA INDIA,<br />
-        CIN: U27310HR2008PTC042218
-      </p>
-
-      <div class="footer1" style="display: flex; justify-content: end">
-        <p class="registered-address span1">
-          <span>Note:</span> This is a computer-generated invoice. No signature
-          required.
-        </p>
-      </div>
-
-      <div class="footer">
-        <img
-          src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mygold.png"
-          alt="mygold"
-          height="50px"
-        />
+      <div
+        class="footer1"
+        style="display: flex; justify-content: end; margin-top: 20px"
+      >
+        <div style="text-align: center" class="span1">
+          <p>*Note : This is computer generated Invoice.</p>
+          <p>No signature required</p>
+        </div>
       </div>
     </div>
   </body>
