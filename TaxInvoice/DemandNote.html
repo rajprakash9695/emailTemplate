@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demand Note</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .header,
+      .header2,
+      .footer,
+      .footer1 {
+        margin-bottom: 20px;
+      }
+
+      .header,
+      .footer1 {
+        gap: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .header2 {
+        line-height: 1.5;
+      }
+
+      .span1 {
+        font-weight: 600;
+      }
+
+      .head {
+        font-size: 14px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+      }
+
+      th,
+      td {
+        padding: 12px 0px;
+      }
+
+      th {
+        background-color: #ededed;
+      }
+
+      .td1 {
+        padding: 16px;
+        line-height: 1;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+      }
+
+      .hr {
+        border: dotted 0.05px;
+        border-color: #e7d4d4;
+        margin-top: -10px;
+        margin-bottom: 5px;
+      }
+
+      .declaration,
+      .registered-address {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .declaration span,
+      .registered-address span {
+        font-weight: 600;
+      }
+
+      img {
+        vertical-align: middle;
+      }
+
+      .text-color {
+        color: gray;
+      }
+
+      .text-color > span {
+        color: black;
+      }
+      .footer-left {
+        /* font-size: 16px; */
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="margin-top: -20px">
+        <div>
+          <p class="head">Demand Note of Gold Rental</p>
+          <div class="header2">
+            <p class="text-color">
+              Reference N0.:
+              <span class="span1">2456454685765845</span>
+            </p>
+            <p class="text-color">
+              Invoice Date: <span class="span1">07/12/2023</span>
+            </p>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 45px;
+          "
+        >
+          <div>
+            <p class="head">Original - Customer Copy</p>
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mygold.png"
+              alt="mgold"
+              width="130px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="header" style="margin-top: -20px">
+        <div>
+          <p class="head">Bailee Details</p>
+          <div class="header2">
+            <p class="text-color">
+              Lease Partner Name: <span class="span1">Suneel Kumar</span>
+            </p>
+            <p class="text-color">
+              Lease Partner Mobile No.: <span class="span1">23S000000987</span>
+            </p>
+            <p class="text-color">
+              Lease Partner Email ID:
+              <span class="span1">suneel@gmail.com</span>
+            </p>
+            <p class="text-color">
+              Lease Partner PAN No.: <span class="span1">226010</span>
+            </p>
+            <p class="text-color">
+              Lease Partner GSTIN: <span class="span1">JHGS565JKHK55</span>
+            </p>
+            <p class="text-color">Pincode: <span class="span1">226010</span></p>
+            <p class="text-color">
+              State: <span class="span1">Inter state</span>
+            </p>
+            <p class="text-color">
+              Place of Supply: <span class="span1">Interstate</span>
+            </p>
+            <p class="text-color">State Code: <span class="span1">9</span></p>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top: -20px" class="head">Bailor Details</p>
+      <div class="header">
+        <div>
+          <p class="span1" style="margin-bottom: 5px">
+            BKS MyVault Private Limited
+          </p>
+          <p style="max-width: 12rem" class="text-color">
+            M-13 Gole Market, Mahanagar, Lucknow, Uttar Pradesh - 220209
+          </p>
+          <p class="text-color" style="margin-top: 10px">
+            BKS MyVault Invoice Number:
+            <span class="span1">9188100189</span>
+          </p>
+        </div>
+        <div style="padding-right: 80px; margin-top: 14px">
+          <p style="margin-bottom: 5px" class="text-color">
+            PAN No.: <span class="span1">GFAKSIU8</span>
+          </p>
+          <p class="text-color">
+            GSTIN No.: <span class="span1">9345636vg5g</span>
+          </p>
+        </div>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th align="left">Description</th>
+            <th align="center">Month</th>
+            <th align="right">Total Gold Weight</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td align="left" style="max-width: 7rem">
+              <p>Satisfaction for Gold Rental</p>
+            </td>
+
+            <td align="center" class="span1">10/06/2024</td>
+            <td align="right" class="span1">16.00 gm</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="hr" />
+
+      <table>
+        <tbody>
+          <tr>
+            <td align="left">
+              <div class="span1">
+                <p style="margin-bottom: 6px">Total Invoice Weight</p>
+                <p>
+                  Total Weight In Words:
+                  <span
+                    >One Thousand Six Hundred Ninety-One and Eighty-Four
+                    Paise</span
+                  >
+                </p>
+              </div>
+            </td>
+            <td align="right">
+              <p class="span1" style="margin-top: -18px">10.00 gm</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="hr" />
+
+      <div
+        class="footer1"
+        style="display: flex; justify-content: space-between; margin-top: 20px"
+      >
+        <p class="footer-left">*As per Terms of Lease Agreement</p>
+        <div style="text-align: center" class="span1">
+          <p>
+            <span style="color: black">*Note</span> : This is computer generated
+            Invoice.
+          </p>
+          <p>No signature required</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
