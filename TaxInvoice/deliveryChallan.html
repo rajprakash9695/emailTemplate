@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delivery Challan</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 11px;
+        font-family: 'Roboto', sans-serif;
+        padding: 20px;
+        margin-top: 10px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .nav {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+      .nav > p {
+        margin: 14px 0px;
+        font-size: 14px;
+        font-weight: 600;
+      }
+      .body {
+        border: 2px solid black;
+      }
+      .top {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+      }
+      .top > div {
+        border: 1px solid black;
+        padding: 2px;
+        line-height: 16px;
+      }
+
+      .text-color {
+        color: black;
+        font-weight: 600;
+      }
+      .span1 {
+        font-weight: 500;
+        color: black;
+        margin-left: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 15px;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 6px 10px;
+      }
+
+      .sign {
+        text-align: end;
+        margin-right: 5px;
+        margin-top: 50px;
+        font-family: 'Caveat';
+        font-style: italic;
+        font-size: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+        <img
+          src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/myvault.png"
+          alt="Myvault"
+          width="100px"
+        />
+        <p>Delivery Challan</p>
+      </div>
+      <div class="body">
+        <div class="top">
+          <div>
+            <p class="text-color">
+              Delivery Challan No.: <span class="span1">Mum 01/23-24</span>
+            </p>
+            <p class="text-color">
+              Delivery Challan date: <span class="span1">10/06/24</span>
+            </p>
+            <p class="text-color">
+              Reserve charge: <span class="span1">NO</span>
+            </p>
+            <p class="text-color">State: <span class="span1">Mumbai</span></p>
+            <p class="text-color">State code: <span class="span1">24</span></p>
+          </div>
+          <div>
+            <p class="text-color">
+              Transporter Name: <span class="span1">Mum 01/23-24</span>
+            </p>
+            <p class="text-color">
+              Transporter GST: <span class="span1">10/06/24</span>
+            </p>
+            <p class="text-color">
+              Transportation Mode: <span class="span1">NO</span>
+            </p>
+            <p class="text-color">
+              Place of Supply: <span class="span1">Mumbai</span>
+            </p>
+            <p class="text-color">State: <span class="span1">24</span></p>
+          </div>
+        </div>
+        <div class="top" style="margin-top: 15px">
+          <div>
+            <p class="text-color">SHIPPER:</p>
+            <p class="text-color">
+              Firm: <span class="span1">BKS MyVault PVT LTD</span>
+            </p>
+            <p class="text-color" style="max-width: 20rem">
+              Address: <span class="span1">NO</span>
+            </p>
+            <p class="text-color">State: <span class="span1">Mumbai</span></p>
+            <p class="text-color">State code: <span class="span1">24</span></p>
+            <p class="text-color">
+              GSTIN: <span class="span1">GKJKSSDDDDD24</span>
+            </p>
+          </div>
+          <div>
+            <p class="text-color">CONSIGNEE :</p>
+            <p class="text-color">
+              Firm: <span class="span1">BKS MyVault PVT LTD</span>
+            </p>
+            <p class="text-color" style="max-width: 20rem">
+              Address: <span class="span1">NO</span>
+            </p>
+            <p class="text-color">State: <span class="span1">Mumbai</span></p>
+            <p class="text-color">State code: <span class="span1">24</span></p>
+            <p class="text-color">
+              GSTIN/UIN: <span class="span1">GKJKSSDDDDD24</span>
+            </p>
+          </div>
+        </div>
+        <div class="top">
+          <div>
+            <p class="text-color">PURPOSE OF MOVEMENT :</p>
+
+            <p style="padding: 10px 0px 35px 0px">Goods For Refining</p>
+          </div>
+          <div>
+            <p class="text-color">Delivery Authorization :</p>
+          </div>
+        </div>
+        <table>
+          <thead style="font-weight: 600">
+            <tr align="center">
+              <td rowspan="2">S.No.</td>
+              <td rowspan="2">Description of Goods</td>
+              <td rowspan="2">HSN of Goods</td>
+              <td rowspan="2">Weight/ Quantity</td>
+              <td rowspan="2">Rate / Price</td>
+              <td rowspan="2">Total Amount</td>
+              <td rowspan="2">Taxable Amount</td>
+              <td colspan="2">CGST</td>
+            </tr>
+            <tr>
+              <td>Rate</td>
+              <td>Amount</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>BOX 1</td>
+              <td>792838</td>
+              <td>555.44</td>
+              <td></td>
+              <td>55555555</td>
+              <td></td>
+              <td>4554</td>
+              <td>34555</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>BOX 1</td>
+              <td>792838</td>
+              <td>555.44</td>
+              <td></td>
+              <td>55555555</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>BOX 1</td>
+              <td>792838</td>
+              <td>555.44</td>
+              <td></td>
+              <td>55555555</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>BOX 1</td>
+              <td>792838</td>
+              <td>555.44</td>
+              <td></td>
+              <td>55555555</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+
+            <!-- Grand Total -->
+            <tr align="center" style="font-weight: 600">
+              <td colspan="2">Grand Total</td>
+
+              <td colspan="7">XXXXXX</td>
+            </tr>
+          </tbody>
+        </table>
+        <table>
+          <thead align="center" style="font-weight: 600">
+            <tr>
+              <td colspan="2">SGST</td>
+              <td colspan="2">IGST</td>
+              <td colspan="2">Cess</td>
+              <td rowspan="2">Total Amount (incl. tax)</td>
+            </tr>
+            <tr>
+              <td>Rate</td>
+              <td>Amount</td>
+              <td>Rate</td>
+              <td>Amount</td>
+              <td>Rate</td>
+              <td>Amount</td>
+            </tr>
+          </thead>
+          <tbody align="center">
+            <tr>
+              <td>65</td>
+              <td>65</td>
+              <td>65</td>
+              <td>65</td>
+              <td>65</td>
+              <td>65</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td>65</td>
+              <td>65</td>
+              <td>65</td>
+              <td>65</td>
+              <td>65</td>
+              <td>65</td>
+              <td>65</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr style="font-weight: 600">
+              <td></td>
+              <td>XX</td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td>XX</td>
+              <td>XX</td>
+            </tr>
+            <tr align="left">
+              <td colspan="5">
+                <p class="text-color">
+                  Total value(in words) : <span class="span1">Twentty</span>
+                </p>
+              </td>
+              <td colspan="2">
+                <p class="text-color">Total =<span class="span1"></span></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="sign">
+          Stamp & Signature of supplier / authorised representative
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
