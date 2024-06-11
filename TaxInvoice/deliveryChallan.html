@@ -76,6 +76,25 @@
         font-style: italic;
         font-size: 0.8rem;
       }
+
+      .page-break {
+        page-break-before: always;
+      }
+
+      .shipper > p {
+        font-size: medium;
+        font-weight: 600;
+        text-align: center;
+        margin: 20px 0px;
+      }
+      .ship {
+        padding: 20px;
+        font-size: 14px;
+      }
+      .ship > div {
+        line-height: 16px;
+        max-width: 50%;
+      }
     </style>
   </head>
   <body>
@@ -299,6 +318,26 @@
         <p class="sign">
           Stamp & Signature of supplier / authorised representative
         </p>
+      </div>
+      <div class="page-break"></div>
+      <div class="shipper">
+        <p>Shipping Details</p>
+        <div class="ship">
+          <div>
+            <p class="text-color" style="margin-bottom: 6px; font-size: 16px">
+              To:
+            </p>
+            <p>MMTC</p>
+            <p>123 Fake Stree Ottawa, Haryana 220911t</p>
+          </div>
+          <div style="margin-top: 40px">
+            <p class="text-color" style="margin-bottom: 6px; font-size: 16px">
+              From:
+            </p>
+            <p>MyVault</p>
+            <p>123 Fake Street Ottawa, Haryana 220911</p>
+          </div>
+        </div>
       </div>
     </div>
   </body>
