@@ -1,0 +1,2458 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>BKS_Verifier service agreement</title>
+    <style type="text/css">
+      * {
+        margin: 0;
+        padding: 0;
+        text-indent: 0;
+        max-width: 800px;
+        margin: 20px auto;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+
+      h1 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      .p,
+      p {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+        margin: 0pt;
+      }
+      .s1 {
+        color: black;
+        font-family: Arial, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      .s2 {
+        color: black;
+        font-family: Arial, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      .s3 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 7pt;
+        vertical-align: 3pt;
+      }
+      .s4 {
+        color: #0d0d0d;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      .s6 {
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      .s8 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      .s9 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: italic;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      .s10 {
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      .s11 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      .s12 {
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      .s13 {
+        color: black;
+        font-family: Arial, sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      .s14 {
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: underline;
+        font-size: 11pt;
+      }
+      li {
+        display: block;
+      }
+      #l1 {
+        padding-left: 0pt;
+        counter-reset: c1 1;
+      }
+      #l1 > li > *:first-child:before {
+        counter-increment: c1;
+        content: '(' counter(c1, decimal) ') ';
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l1 > li:first-child > *:first-child:before {
+        counter-increment: c1 0;
+      }
+      li {
+        display: block;
+      }
+      #l2 {
+        padding-left: 0pt;
+        counter-reset: d1 1;
+      }
+      #l2 > li > *:first-child:before {
+        counter-increment: d1;
+        content: '(' counter(d1, upper-latin) ') ';
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l2 > li:first-child > *:first-child:before {
+        counter-increment: d1 0;
+      }
+      #l3 {
+        padding-left: 0pt;
+        counter-reset: d2 1;
+      }
+      #l3 > li > *:first-child:before {
+        counter-increment: d2;
+        content: counter(d2, decimal) '. ';
+        color: black;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+      }
+      #l3 > li:first-child > *:first-child:before {
+        counter-increment: d2 0;
+      }
+      #l4 {
+        padding-left: 0pt;
+        counter-reset: e1 1;
+      }
+      #l4 > li > *:first-child:before {
+        counter-increment: e1;
+        content: '(' counter(e1, lower-latin) ') ';
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l4 > li:first-child > *:first-child:before {
+        counter-increment: e1 0;
+      }
+      #l5 {
+        padding-left: 0pt;
+        counter-reset: d3 1;
+      }
+      #l5 > li > *:first-child:before {
+        counter-increment: d3;
+        content: counter(d2, decimal) '.' counter(d3, decimal) '. ';
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l5 > li:first-child > *:first-child:before {
+        counter-increment: d3 0;
+      }
+      #l6 {
+        padding-left: 0pt;
+        counter-reset: d3 1;
+      }
+      #l6 > li > *:first-child:before {
+        counter-increment: d3;
+        content: counter(d2, decimal) '.' counter(d3, decimal) '. ';
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l6 > li:first-child > *:first-child:before {
+        counter-increment: d3 0;
+      }
+      #l7 {
+        padding-left: 0pt;
+        counter-reset: d3 1;
+      }
+      #l7 > li > *:first-child:before {
+        counter-increment: d3;
+        content: counter(d2, decimal) '.' counter(d3, decimal) '. ';
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l7 > li:first-child > *:first-child:before {
+        counter-increment: d3 0;
+      }
+      #l8 {
+        padding-left: 0pt;
+        counter-reset: d3 1;
+      }
+      #l8 > li > *:first-child:before {
+        counter-increment: d3;
+        content: counter(d2, decimal) '.' counter(d3, decimal) '. ';
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l8 > li:first-child > *:first-child:before {
+        counter-increment: d3 0;
+      }
+      #l9 {
+        padding-left: 0pt;
+        counter-reset: d4 1;
+      }
+      #l9 > li > *:first-child:before {
+        counter-increment: d4;
+        content: '(' counter(d4, lower-latin) ') ';
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l9 > li:first-child > *:first-child:before {
+        counter-increment: d4 0;
+      }
+      #l10 {
+        padding-left: 0pt;
+        counter-reset: d3 1;
+      }
+      #l10 > li > *:first-child:before {
+        counter-increment: d3;
+        content: counter(d2, decimal) '.' counter(d3, decimal) '. ';
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l10 > li:first-child > *:first-child:before {
+        counter-increment: d3 0;
+      }
+      #l11 {
+        padding-left: 0pt;
+        counter-reset: d4 1;
+      }
+      #l11 > li > *:first-child:before {
+        counter-increment: d4;
+        content: '(' counter(d4, lower-latin) ') ';
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l11 > li:first-child > *:first-child:before {
+        counter-increment: d4 0;
+      }
+      #l12 {
+        padding-left: 0pt;
+        counter-reset: d3 1;
+      }
+      #l12 > li > *:first-child:before {
+        counter-increment: d3;
+        content: counter(d2, decimal) '.' counter(d3, decimal) '. ';
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l12 > li:first-child > *:first-child:before {
+        counter-increment: d3 0;
+      }
+      #l13 {
+        padding-left: 0pt;
+        counter-reset: d4 1;
+      }
+      #l13 > li > *:first-child:before {
+        counter-increment: d4;
+        content: '(' counter(d4, lower-latin) ') ';
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l13 > li:first-child > *:first-child:before {
+        counter-increment: d4 0;
+      }
+      #l14 {
+        padding-left: 0pt;
+        counter-reset: d3 1;
+      }
+      #l14 > li > *:first-child:before {
+        counter-increment: d3;
+        content: counter(d2, decimal) '.' counter(d3, decimal) '. ';
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l14 > li:first-child > *:first-child:before {
+        counter-increment: d3 0;
+      }
+      #l15 {
+        padding-left: 0pt;
+        counter-reset: d4 1;
+      }
+      #l15 > li > *:first-child:before {
+        counter-increment: d4;
+        content: '(' counter(d4, lower-latin) ') ';
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l15 > li:first-child > *:first-child:before {
+        counter-increment: d4 0;
+      }
+      #l16 {
+        padding-left: 0pt;
+        counter-reset: d3 1;
+      }
+      #l16 > li > *:first-child:before {
+        counter-increment: d3;
+        content: counter(d2, decimal) '.' counter(d3, decimal) '. ';
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l16 > li:first-child > *:first-child:before {
+        counter-increment: d3 0;
+      }
+      #l17 {
+        padding-left: 0pt;
+        counter-reset: d3 1;
+      }
+      #l17 > li > *:first-child:before {
+        counter-increment: d3;
+        content: counter(d2, decimal) '.' counter(d3, decimal) '. ';
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l17 > li:first-child > *:first-child:before {
+        counter-increment: d3 0;
+      }
+      #l18 {
+        padding-left: 0pt;
+        counter-reset: d4 1;
+      }
+      #l18 > li > *:first-child:before {
+        counter-increment: d4;
+        content: '(' counter(d4, lower-latin) ') ';
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l18 > li:first-child > *:first-child:before {
+        counter-increment: d4 0;
+      }
+      #l19 {
+        padding-left: 0pt;
+        counter-reset: d3 1;
+      }
+      #l19 > li > *:first-child:before {
+        counter-increment: d3;
+        content: counter(d2, decimal) '.' counter(d3, decimal) '. ';
+        color: black;
+        font-family: 'Times New Roman', serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l19 > li:first-child > *:first-child:before {
+        counter-increment: d3 0;
+      }
+      #l20 {
+        padding-left: 0pt;
+        counter-reset: d4 1;
+      }
+      #l20 > li > *:first-child:before {
+        counter-increment: d4;
+        content: '(' counter(d4, lower-latin) ') ';
+        color: black;
+        font-family: Calibri, sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        text-decoration: none;
+        font-size: 11pt;
+      }
+      #l20 > li:first-child > *:first-child:before {
+        counter-increment: d4 0;
+      }
+      table,
+      tbody {
+        vertical-align: top;
+        overflow: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <h1
+      style="
+        padding-top: 2pt;
+        padding-left: 7pt;
+        text-indent: 0pt;
+        text-align: center;
+      "
+    >
+      SERVICE AGREEMENT
+    </h1>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <p style="padding-left: 13pt; text-indent: 0pt; text-align: left">
+      This <b>SERVICE AGREEMENT </b>(“<b>Agreement</b>”) is made on this [<span
+        class="s1"
+        >●</span
+      >] day of [<span class="s1">●</span>], 2024 (“<b>Execution Date</b>”)
+      <b>BETWEEN</b>:
+    </p>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <ol id="l1">
+      <li data-list-text="(1)">
+        <h1 style="padding-left: 55pt; text-indent: -42pt; text-align: justify">
+          [<span class="s2">●</span>]<span class="p"
+            >, a company incorporated under the Companies Act, 2013 with CIN </span
+          >[<span class="s2">●</span>]<span class="p"
+            >, and having its office at </span
+          >[<span class="s2">●</span>]
+          <span class="p">(hereinafter referred to as the “</span>Service
+          Provider<span class="p"
+            >”, which expression shall, unless it be repugnant to the context or
+            meaning thereof, be deemed to mean and include its successors and
+            permitted assigns) of the </span
+          >FIRST PART<span class="p">; and</span>
+        </h1>
+        <p style="text-indent: 0pt; text-align: left"><br /></p>
+      </li>
+      <li data-list-text="(2)">
+        <p style="padding-left: 55pt; text-indent: -42pt; text-align: justify">
+          <b>BKS MYVAULT PRIVATE LIMITED</b>, a company incorporated under the
+          laws of India and having its registered office at 3<span class="s3"
+            >rd</span
+          >
+          Floor, M-13, Gole Market Mahanagar, Lucknow, Uttar Pradesh-226006
+          (hereinafter referred to as the “<b>Client</b>”, which expression
+          shall, unless it be repugnant to the context or meaning thereof, be
+          deemed to mean and include its successors and permitted assigns) of
+          the <b>SECOND PART</b>.
+        </p>
+      </li>
+    </ol>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <p style="padding-left: 13pt; text-indent: 0pt; text-align: justify">
+      (The Service Provider and the Client are hereinafter collectively referred
+      to as the “<b>Parties</b>” and individually each as a “<b>Party</b>”.)
+    </p>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <h1 style="padding-left: 13pt; text-indent: 0pt; text-align: left">
+      WHEREAS
+    </h1>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <ol id="l2">
+      <li data-list-text="(A)">
+        <p
+          class="s4"
+          style="padding-left: 55pt; text-indent: -42pt; text-align: justify"
+        >
+          The Client <i>inter alia </i>facilitates the bailment of Customer
+          Gold. The Service Provider has represented to the Client that the
+          Service Provider can provide the Services (<i
+            >as defined hereinafter</i
+          >).
+        </p>
+        <p style="text-indent: 0pt; text-align: left"><br /></p>
+      </li>
+      <li data-list-text="(B)">
+        <p style="padding-left: 55pt; text-indent: -42pt; text-align: justify">
+          Based on the representations of the Service Provider, Client has
+          agreed to engage the Service Provider for the Services. The Parties
+          are entering into this Agreement with the objective of recording their
+          respective rights and obligations upon the terms and subject to the
+          conditions hereinafter set forth.
+        </p>
+        <p style="text-indent: 0pt; text-align: left"><br /></p>
+        <h1 style="padding-left: 13pt; text-indent: 0pt; text-align: justify">
+          NOW, THEREFORE, in consideration of the representations, warranties,
+          mutual agreements and covenants contained in this Agreement and other
+          good and valuable consideration (the receipt and adequacy of which are
+          hereby mutually acknowledged), the Parties hereby agree as follows:
+        </h1>
+        <ol id="l3">
+          <li data-list-text="1.">
+            <p
+              class="s6"
+              style="
+                padding-top: 13pt;
+                padding-left: 55pt;
+                text-indent: -42pt;
+                text-align: left;
+              "
+            >
+              DEFINITIONS
+            </p>
+            <p style="padding-top: 1pt; text-indent: 0pt; text-align: left">
+              <br />
+            </p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              Unless otherwise defined in this Agreement, the capitalised terms
+              listed below shall have the following meanings:
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Authorisation</b>” means:
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <ol id="l4">
+              <li data-list-text="(a)">
+                <p
+                  style="
+                    padding-left: 97pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  an authorisation, consent, approval, resolution, licence,
+                  exemption, filing, notarisation, lodgement or registration; or
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="(b)">
+                <p
+                  style="
+                    padding-left: 97pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  in relation to anything which will be fully or partly
+                  prohibited or restricted by law or regulation if a
+                  Governmental Authority intervenes or acts in any way within a
+                  specified period after lodgement, filing, registration or
+                  notification, the expiry of that period without intervention
+                  or action.
+                </p>
+              </li>
+            </ol>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Applicable Law</b>” means any statute, national, state,
+              provincial, local, municipal, foreign, international,
+              multinational or other law, treaty, code, regulation, ordinance,
+              rule, judgment, order, decree, bye-law, approval of any
+              Governmental Authority, directive,
+            </p>
+            <p
+              style="
+                padding-top: 2pt;
+                padding-left: 55pt;
+                text-indent: 0pt;
+                text-align: justify;
+              "
+            >
+              guideline, policy, requirement or other governmental restriction
+              or any similar form of decision of or determination by, or any
+              interpretation or administration having the force of law of any of
+              the foregoing by any Governmental Authority having jurisdiction
+              over the matter in question, whether in effect as of the date of
+              this Agreement or at any time thereafter;
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Business Day</b>” means a day (other than a Saturday, a Sunday
+              or any other day which is a public holiday) on which banks are
+              open for general business in Lucknow, India.
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Confidential Information</b>” shall have the meaning ascribed
+              to the term in Clause 8 (<i>Confidentiality</i>).
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Customer</b>” shall mean the customers of the Company.
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Customer Gold</b>” means the physical gold to be provided by
+              the Customers.
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Dispute</b>” shall have the meaning ascribed to the term in
+              Clause 12.2 (<i>Governing law and dispute resolution</i>).
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Fees</b>” means the fees payable to the Service Provider by
+              the Client for the Services as specified in Part B of Schedule I
+              and as otherwise agreed between the Parties.
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 7pt; text-align: justify"
+            >
+              “<b>Governmental Authority</b>” means any government or any
+              governmental agency, semi-governmental or judicial entity or
+              authority (including, without limitation, any stock exchange or
+              any self-regulatory organisation established under statute).
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Indemnified Parties</b>” shall have the meaning ascribed to
+              the term in Clause 10 (<i>Indemnification</i>).
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Invoice</b>” means the invoice to be given by Service Provider
+              to the Client setting out the Fees payable to the Service Provider
+              by the Client for the Services.
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Person</b>” means any natural person, limited or unlimited
+              liability company, corporation, partnership (whether limited or
+              unlimited), proprietorship, Hindu undivided family, trust, union,
+              association, Governmental Authority or any agency or political
+              subdivision thereof or any other entity that may be treated as a
+              person under the Applicable Law.
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Services</b>” shall mean the services agreed to be rendered by
+              Service Provider as set forth in Part A of Schedule I
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              “<b>Tax</b>” means all forms of present and future taxes
+              (including but not limited to Indirect Taxes), deductions,
+              withholdings, duties, imposts, levies, cesses, fees, charges,
+              social security contributions and rates imposed, levied,
+              collected, withheld or assessed by any Governmental Authority or
+              other taxing authority in India or elsewhere and any interest,
+              additional taxation penalty, surcharge, cess or fine in connection
+              therewith and “<b>Taxes</b>” shall be construed accordingly.
+            </p>
+          </li>
+          <li data-list-text="2.">
+            <p
+              class="s6"
+              style="
+                padding-top: 13pt;
+                padding-left: 55pt;
+                text-indent: -42pt;
+                text-align: left;
+              "
+            >
+              SCOPE OF SERVICES
+            </p>
+            <p style="padding-top: 1pt; text-indent: 0pt; text-align: left">
+              <br />
+            </p>
+            <ol id="l5">
+              <li data-list-text="2.1.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Client hereby appoints the Service Provider on non-exclusive
+                  basis to provide the Service more particularly mentioned in
+                  the Part A of Schedule I.
+                </p>
+              </li>
+              <li data-list-text="2.2.">
+                <p
+                  style="
+                    padding-top: 3pt;
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  The Services shall be provided in a timely and professional
+                  manner and without any negligence or default. The Service
+                  Provider shall depute responsible and duly skilled personnel
+                  for the provision of the Services.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+            </ol>
+          </li>
+          <li data-list-text="3.">
+            <h1
+              style="padding-left: 55pt; text-indent: -42pt; text-align: left"
+            >
+              OBLIGATIONS OF THE SERVICE PROVIDER
+            </h1>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <ol id="l6">
+              <li data-list-text="3.1.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  The Service Provider shall designate a person on its behalf
+                  and share relevant contact details of such person, for the
+                  purpose of coordinating and providing Services.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="3.2.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  Service Provider shall undertake to procure all the necessary
+                  licenses, approvals, permissions, rights valid and in force.
+                  Service Provider further confirms that it has all skill and
+                  expertise to provide the Services on the terms set out in this
+                  Agreement.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="3.3.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  Service Provider shall ensure to make all statutory payments
+                  to its employees, labour and vendors on timely manner without
+                  causing any disturbance in the Services.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="3.4.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  Service Provider shall make efforts to prevent any delay in
+                  the performance of its obligations hereunder and shall work
+                  together with Client for the effective and timely provisions
+                  of Services and compensate for any loss arising to the Client.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="3.5.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  <span class="p"
+                    >[The Service Provider shall maintain due records of the
+                    Customer Gold received by the Service Provider and shall
+                    transport the same to the locations agreed with the Client
+                    in a careful and safe manner. The Service Provider shall
+                    maintain adequate insurance in relation to the
+                    transportation of the Customer Gold and shall be liable for
+                    any loss, damage, destruction of the Customer Gold and shall
+                    compensate the Client for the same. The Service Provider
+                    shall be fully liable for all acts of its officers, agents,
+                    contractors and authorized persons in relation to the
+                    provision of the Services.] [</span
+                  ><span class="s8" style="background-color: #ff0"
+                    >Note: To be retained in</span
+                  ><span class="s9"> </span
+                  ><span class="s8" style="background-color: #ff0"
+                    >case of transportation of gold services.</span
+                  ><span class="p">]</span>
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="3.6.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  <span class="p"
+                    >Where the Service Provider has received any Customer Gold
+                    for melting and refining the Service Provider shall carry
+                    out any such melting and refining in a careful manner to
+                    prevent any loss or pilferage of the Customer Gold. The
+                    Service Provider shall ensure that the entire process is
+                    carried out in a secure manner and at the end of such
+                    melting and refining, the Service Provider shall maintain
+                    the melted gold in a safe and secure manner and shall be
+                    liable for any loss, damage, destruction of the Customer
+                    Gold and shall compensate the Client for the same. The
+                    melted Customer Gold shall be handed over to the Client in
+                    such manner as may be specified by the Client. The Service
+                    Provider shall maintain adequate insurance in relation to
+                    the Customer Gold in relation to any loss, damage,
+                    destruction of the Customer Gold. [</span
+                  ><span class="s8" style="background-color: #ff0"
+                    >Note: To be retained where verifying and</span
+                  ><span class="s9"> </span
+                  ><span class="s8" style="background-color: #ff0"
+                    >refining services are availed.</span
+                  ><span class="p">]</span>
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="3.7.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  The Client shall be entitled to audit the Services provided by
+                  the Service Provider and inspect the locations, vehicles,
+                  devices and machines used to provide the Services. In case the
+                  Client identifies any shortcoming or deficiency, the Service
+                  Provider shall promptly rectify the same.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="3.8.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  The Service Provider shall not intimidate or harass the
+                  Customer or demand any payment from the Customer in any manner
+                  whatsoever. The Service Provider shall also not claim any
+                  encumbrance, lien or right over the Customer Gold and shall
+                  segregate it from the other assets of the Service Provider. In
+                  case of a violation of any of the conditions specified
+                </p>
+                <p
+                  style="
+                    padding-top: 2pt;
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: left;
+                  "
+                >
+                  herein, the Client reserves the right to imposes charges and
+                  penalties on the Service Provider.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+            </ol>
+          </li>
+          <li data-list-text="4.">
+            <h1
+              style="padding-left: 55pt; text-indent: -42pt; text-align: left"
+            >
+              OBLIGATIONS OF CLIENT
+            </h1>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <ol id="l7">
+              <li data-list-text="4.1.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  Client shall ensure that the undisputed Fee of the Service
+                  Provider is paid within 30 (thirty) days from the date of
+                  receipt of Invoice.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="4.2.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  Client is responsible for information conveyed by the Client
+                  to Service Provider and for ensuring that such information is
+                  complete, correct, and timely and through written mode of
+                  communication only.
+                </p>
+                <p style="padding-top: 5pt; text-indent: 0pt; text-align: left">
+                  <br />
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li data-list-text="5.">
+            <p
+              class="s6"
+              style="padding-left: 55pt; text-indent: -42pt; text-align: left"
+            >
+              INVOICING AND PAYMENT
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <ol id="l8">
+              <li data-list-text="5.1.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  The Fee shall be payable to the Client, as specified in Part B
+                  of Schedule I. The Invoice shall contain the details of the
+                  bank account of the Service Provider for the payment of
+                  Invoice. In case of any dispute or disagreements in relation
+                  to the Fees, the Parties shall resolve to amicably resolve the
+                  same. The Fee shall be payable and invoiced in accordance with
+                  the timelines and frequency agreed between the Parties.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="5.2.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Taxes
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <ol id="l9">
+                  <li data-list-text="(a)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      All Fees payable by the Client to the Service Provider
+                      shall be subject to applicable Taxes.
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                  <li data-list-text="(b)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      The Service Provider shall duly deposit all Goods and
+                      Services Tax paid to the Service Provider and shall file
+                      all returns under Applicable Laws. In case the Client is
+                      unable to claim any credit for Goods and Services Tax paid
+                      to the Service Provider, the Service Provider shall
+                      reimburse and indemnify the Client for the same and the
+                      Client reserves the right to set off such amounts for any
+                      future payments due to the Service Provider.
+                    </p>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li data-list-text="6.">
+            <p
+              class="s6"
+              style="
+                padding-top: 13pt;
+                padding-left: 55pt;
+                text-indent: -42pt;
+                text-align: left;
+              "
+            >
+              REPRESENATIONS AND WARRANTIES
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <ol id="l10">
+              <li data-list-text="6.1.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  On the Execution Date, each Party hereby represents and
+                  warrants that the following representations and warranties are
+                  true, correct, valid and subsisting in all respects:
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <ol id="l11">
+                  <li data-list-text="(a)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      it is a limited company duly incorporated and validly
+                      existing under the laws of the jurisdiction of its
+                      incorporation and it is within the each of the Party’s
+                      powers to execute this Agreement and each of the Parties
+                      has all authority and capacity to enter into this
+                      Agreement and it has the power to own its assets and carry
+                      on its business as it is being conducted.
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                  <li data-list-text="(b)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      all Authorisations, consents, approvals, resolutions,
+                      licences, exemptions, filings, notarisations, lodgements
+                      or registrations required or desirable: (i) to enable it
+                      lawfully to enter into, exercise its rights and comply
+                      with its obligations in this Agreement and the
+                      transactions contemplated by this Agreement; (ii) to make
+                      this Agreement admissible in evidence in any relevant
+                      jurisdiction, have been obtained or effected and are in
+                      full force and effect.
+                    </p>
+                  </li>
+                  <li data-list-text="(c)">
+                    <p
+                      style="
+                        padding-top: 2pt;
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      there are no actions, suits or proceedings pending against
+                      a Party or, to the best of a Party’s knowledge, threatened
+                      against it under Applicable Laws or in equity before any
+                      court or Governmental Authority, the outcome of which may
+                      result in the default or breach of this Agreement or which
+                      individually or in the aggregate may result in any
+                      material impairment of its ability to perform its material
+                      (including any payment) obligations under this Agreement,
+                      as applicable;
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                  <li data-list-text="(d)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      this Agreement constitutes a legal, valid and binding
+                      obligation of each Party, enforceable against each of the
+                      Parties in accordance with its respective terms, and does
+                      not and will not conflict with any law or regulation to
+                      which each of the Parties is subject to, its
+                      constitutional documents, or with any agreement or
+                      instrument binding on it; and
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                  <li data-list-text="(e)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      it is not in receivership, insolvency, or liquidation, nor
+                      has it taken steps to enter into liquidation or
+                      bankruptcy.
+                    </p>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li data-list-text="7.">
+            <p
+              class="s6"
+              style="
+                padding-top: 13pt;
+                padding-left: 55pt;
+                text-indent: -42pt;
+                text-align: left;
+              "
+            >
+              COVENANTS
+            </p>
+            <p style="padding-top: 1pt; text-indent: 0pt; text-align: left">
+              <br />
+            </p>
+            <ol id="l12">
+              <li data-list-text="7.1.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Each Party covenants that for so long as this Agreement
+                  subsists:
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <ol id="l13">
+                  <li data-list-text="(a)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      it shall obtain and maintain all necessary Authorisations
+                      and comply with all Applicable Laws.
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                  <li data-list-text="(b)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      it shall, in good faith, do all necessary actions to
+                      maintain its existence and keep in full force and effect
+                      its material rights, Authorisations, comply with its
+                      charter and conduct its business with due diligence and
+                      efficiency; and
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                  <li data-list-text="(c)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      it shall not infringe or violate the Intellectual Property
+                      Rights of any other Person in connection with the
+                      provision of Services.
+                    </p>
+                  </li>
+                </ol>
+              </li>
+            </ol>
+          </li>
+          <li data-list-text="8.">
+            <p
+              class="s6"
+              style="
+                padding-top: 13pt;
+                padding-left: 55pt;
+                text-indent: -42pt;
+                text-align: left;
+              "
+            >
+              CONFIDENTIALITY
+            </p>
+            <p style="padding-top: 1pt; text-indent: 0pt; text-align: left">
+              <br />
+            </p>
+            <ol id="l14">
+              <li data-list-text="8.1.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Confidentiality information
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  Each of the Parties shall keep all information relating to
+                  each other Party, information relating to the transactions
+                  herein and this Agreement, the pricing for the Services, and
+                  any information concerning the business, affairs, customers,
+                  clients or suppliers of the other Party (collectively referred
+                  to as the “<b>Confidential Information</b>”) confidential and
+                  shall not at any time disclose to any person any Confidential
+                  Information except in accordance with Clause 8.2.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="8.2.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Disclosure of Confidential Information
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  Nothing in Clause 8.1 shall restrict any Party from disclosing
+                  any Confidential Information for the following purposes:
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <ol id="l15">
+                  <li data-list-text="(a)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      to the extent that such Confidential Information is in the
+                      public domain other than by breach of this Agreement.
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                  <li data-list-text="(b)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      to the extent that such Confidential Information is
+                      required to be disclosed by any Applicable Law or required
+                      to be disclosed to any Governmental Authority to
+                    </p>
+                    <p
+                      style="
+                        padding-top: 2pt;
+                        padding-left: 97pt;
+                        text-indent: 0pt;
+                        text-align: left;
+                      "
+                    >
+                      whose jurisdiction such Party is subject or with whose
+                      instructions it is customary to comply; and
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                  <li data-list-text="(c)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      insofar as such disclosure is reasonably necessary to such
+                      Party’s employees, directors or professional advisers,
+                      provided that such Party shall procure that such
+                      employees, directors or professional advisors treat such
+                      Information as confidential. For the avoidance of doubt,
+                      it is clarified that disclosure of Confidential
+                      Information to such employees, directors or professional
+                      advisors shall be permitted on a strictly “need-to-know
+                      basis”.
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                </ol>
+              </li>
+              <li data-list-text="8.3.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Use of Confidential Information
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  No Party shall use any other Party’s Confidential Information
+                  for any purpose other than to exercise its rights and perform
+                  its obligations under or in connection with this Agreement.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="8.4.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Provisions not in derogation
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  The Parties agree that the provisions set out in this Clause 8
+                  shall be in addition to, and not in derogation of, any
+                  non-disclosure or confidentiality agreements entered into
+                  between the Service Provider and the Client.
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li data-list-text="9.">
+            <p
+              class="s6"
+              style="
+                padding-top: 13pt;
+                padding-left: 55pt;
+                text-indent: -42pt;
+                text-align: left;
+              "
+            >
+              LIMITATION OF LIABILITY
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <p
+              class="s10"
+              style="padding-left: 55pt; text-indent: 0pt; text-align: justify"
+            >
+              The Client shall not be liable for any loss or damage arising from
+              the negligence of the Service Provider or the breach of this
+              Agreement by the Service Provider.
+            </p>
+            <p style="padding-top: 6pt; text-indent: 0pt; text-align: left">
+              <br />
+            </p>
+          </li>
+          <li data-list-text="10.">
+            <p
+              class="s6"
+              style="padding-left: 55pt; text-indent: -42pt; text-align: left"
+            >
+              INDEMNIFICATION
+            </p>
+            <p style="padding-top: 1pt; text-indent: 0pt; text-align: left">
+              <br />
+            </p>
+            <ol id="l16">
+              <li data-list-text="10.1.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  The Service Provider shall indemnify, defend and hold harmless
+                  the Client and its directors, shareholders, contractors,
+                  employees, staff, agents, consultants and advisers (“<b
+                    >Indemnified Parties</b
+                  >”) in full against all costs, expenses, damages and losses,
+                  including any interest, fines, legal and other professional
+                  fees and expenses awarded against or incurred or paid by the
+                  Indemnified Parties (“<b>Losses</b>”) arising out of, or in
+                  connection with, the breach of Applicable Laws, claims in
+                  connection with Taxes, or the breach of the obligations,
+                  covenants, representations and warranties of the Service
+                  Provider under this Agreement.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="10.2.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  Neither Party shall be liable to the other Party for any
+                  special, consequential, incidental, or penal losses or
+                  damages. It is clarified that the Client shall not be liable
+                  for any Losses arising from the use of Services provided by
+                  the Service Provider under the terms of this Agreement.
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li data-list-text="11.">
+            <p
+              class="s6"
+              style="
+                padding-top: 13pt;
+                padding-left: 55pt;
+                text-indent: -42pt;
+                text-align: left;
+              "
+            >
+              TERM AND TERMINATION
+            </p>
+            <p style="text-indent: 0pt; text-align: left"><br /></p>
+            <ol id="l17">
+              <li data-list-text="11.1.">
+                <p
+                  class="s10"
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  The Agreement shall be effective from the Execution Date.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="11.2.">
+                <p
+                  class="s10"
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  Both the Parties shall be entitled to terminate this Agreement
+                  by giving 30 (thirty) days written notice without assigning
+                  any reason.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="11.3.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  Otherwise as provided in Clause 11.2, the Client reserves the
+                  right to terminate the Agreement for the following reasons:
+                </p>
+                <ol id="l18">
+                  <li data-list-text="(a)">
+                    <p
+                      class="s10"
+                      style="
+                        padding-top: 4pt;
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: left;
+                      "
+                    >
+                      In case of the Service Provider’s failure to comply with
+                      the terms of this Agreement;
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                  <li data-list-text="(b)">
+                    <p
+                      class="s10"
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      In case the
+                      <span class="p"
+                        >Service Provider, its partners, directors or promoters
+                        are under or part of any investigation relating to
+                        including but not limited to financial fraud,
+                        embezzlement and money laundering;</span
+                      >
+                    </p>
+                  </li>
+                  <li data-list-text="(c)">
+                    <p
+                      class="s10"
+                      style="
+                        padding-top: 12pt;
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: left;
+                      "
+                    >
+                      In case the Service Provider becoming insolvent or is
+                      subject to any proceedings for winding up, liquidation,
+                      dissolution or insolvency;
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                  <li data-list-text="(d)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      In case the Service Provider, its partners, directors or
+                      promoters are charged with crimes including but not
+                      limited to crimes relating financial fraud, embezzlement
+                      or money laundering;
+                    </p>
+                  </li>
+                  <li data-list-text="(e)">
+                    <p
+                      class="s10"
+                      style="
+                        padding-top: 12pt;
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: left;
+                      "
+                    >
+                      In case the Service Provider or its personnel commits any
+                      misappropriation, theft or makes any claims in relation to
+                      the Customer Gold;
+                    </p>
+                  </li>
+                  <li data-list-text="(f)">
+                    <p
+                      class="s10"
+                      style="
+                        padding-top: 12pt;
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: left;
+                      "
+                    >
+                      In case the continuation of this Agreement with the
+                      Service Provider would bring any disrepute to the Client.
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                </ol>
+              </li>
+              <li data-list-text="11.4.">
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: justify;
+                  "
+                >
+                  In the event of where this Agreement is terminated by the
+                  Client due to any reasons mentioned herein, (a) the Service
+                  Provider shall complete all ongoing Services as specified by
+                  the Client, (b) the Service Provider shall handover all
+                  Customer Gold in the possession of the Service Provider, as
+                  specified by the Client, (c) the Service Provider shall
+                  immediately compensate the Client for all losses arising from
+                  such termination, and (d) after completion of all the relevant
+                  obligations of the Service Provider, the Client shall pay all
+                  accrued and unpaid Fee of the Service Provider.
+                </p>
+                <p style="padding-top: 5pt; text-indent: 0pt; text-align: left">
+                  <br />
+                </p>
+              </li>
+            </ol>
+          </li>
+          <li data-list-text="12.">
+            <p
+              class="s6"
+              style="padding-left: 55pt; text-indent: -42pt; text-align: left"
+            >
+              MISCELLANEOUS
+            </p>
+            <p style="padding-top: 1pt; text-indent: 0pt; text-align: left">
+              <br />
+            </p>
+            <ol id="l19">
+              <li data-list-text="12.1.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Relationship of the Parties
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  Nothing in this Agreement is intended to, or shall be deemed
+                  to, establish any partnership or joint venture between any of
+                  the other Parties, constitute any of the Parties as the agent
+                  of another Party, or authorise any of the Parties to make or
+                  enter into any commitments for or on behalf of any other
+                  Party. Each Party confirms it is acting on its own behalf and
+                  not for the benefit of any other person.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="12.2.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Governing law and dispute resolution
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <ol id="l20">
+                  <li data-list-text="(a)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      This Agreement shall be governed by and construed in
+                      accordance with the laws of India.
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                  <li data-list-text="(b)">
+                    <p
+                      style="
+                        padding-left: 97pt;
+                        text-indent: -42pt;
+                        text-align: justify;
+                      "
+                    >
+                      If any dispute arises in connection with this Agreement
+                      including its validity, interpretation, implementation or
+                      alleged breach of any provision of this Agreement
+                      (“<b>Dispute</b>”), such Dispute shall be subject to the
+                      exclusive jurisdiction of the courts of Lucknow, India.
+                    </p>
+                    <p style="text-indent: 0pt; text-align: left"><br /></p>
+                  </li>
+                </ol>
+              </li>
+              <li data-list-text="12.3.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Cost and Stamp Duty
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  Each of the Parties shall bear its own fees, cost, charges,
+                  and all other expenses, whether direct or incidental to the
+                  negotiation, preparation, execution and implementation of this
+                </p>
+                <p
+                  style="
+                    padding-top: 2pt;
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  Agreement. The stamp duty payable on the Agreement shall be
+                  borne by the Service Provider.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="12.4.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Notices
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  All notices and other communications to be delivered in
+                  connection with this Agreement will be in writing and will be
+                  personally delivered or sent by e-mail, nationally recognized
+                  overnight courier, or registered or certified mail to the
+                  address specified below:
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  If to the Service Provider:
+                </p>
+                <p style="padding-top: 5pt; text-indent: 0pt; text-align: left">
+                  <br />
+                </p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    line-height: 168%;
+                    text-align: left;
+                  "
+                >
+                  Email: [<span class="s1">●</span>] Address: [<span class="s1"
+                    >●</span
+                  >]
+                </p>
+                <p
+                  style="
+                    padding-top: 7pt;
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  If to the Client:
+                </p>
+                <p style="padding-top: 5pt; text-indent: 0pt; text-align: left">
+                  <br />
+                </p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    line-height: 168%;
+                    text-align: left;
+                  "
+                >
+                  Email: [<span class="s1">●</span>] Address: [<span class="s1"
+                    >●</span
+                  >]
+                </p>
+              </li>
+              <li data-list-text="12.5.">
+                <h1
+                  style="
+                    padding-top: 7pt;
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Amendments
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  No variation of this Agreement shall be effective unless it is
+                  in writing and signed by the Parties (or their authorized
+                  representatives). The Parties agree that that the Parties may
+                  enter into one or more written addendums from time to time to
+                  supplement, modify or alter the terms of this Agreement.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="12.6.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Waivers
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  A waiver of any right or remedy under this Agreement or by
+                  Applicable Law is only effective if given in writing and shall
+                  not be deemed a waiver of any subsequent breach or default.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="12.7.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Counterparts
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  This Agreement may be executed in counterparts and shall be
+                  effective when all the Parties have executed and delivered a
+                  counterpart. Each counterpart shall constitute an original of
+                  this Agreement, but all the counterparts shall together
+                  constitute one and the same instrument.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="12.8.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Severability
+                </h1>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+                <p
+                  style="
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  If any provision in this Agreement shall be held to be
+                  illegal, invalid or unenforceable, in whole or in part, the
+                  same shall not impact the validity or enforceability of the
+                  other provisions of the Agreement. Parties shall mutually
+                  agree to whatever deletion or modification is necessary to the
+                  provision, which is held to be illegal, void or unenforceable,
+                  so that the provision is legal, valid and enforceable and
+                  gives effect to the commercial intention of the Parties.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="12.9.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Assignment
+                </h1>
+                <p
+                  style="
+                    padding-top: 2pt;
+                    padding-left: 55pt;
+                    text-indent: 0pt;
+                    text-align: justify;
+                  "
+                >
+                  Each of the Parties may not assign their rights and
+                  obligations under this Agreement to any other Person except
+                  with the prior written consent of the other Party. It is
+                  clarified that merger or acquisition or consolidation of
+                  Client with any other entity shall not terminate this
+                  Agreement. The terms of this Agreement shall continue to bind
+                  the party which has acquired or merged with or consolidated
+                  with Client.
+                </p>
+                <p style="text-indent: 0pt; text-align: left"><br /></p>
+              </li>
+              <li data-list-text="12.10.">
+                <h1
+                  style="
+                    padding-left: 55pt;
+                    text-indent: -42pt;
+                    text-align: left;
+                  "
+                >
+                  Entire understanding
+                </h1>
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </li>
+    </ol>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <p style="padding-left: 55pt; text-indent: 0pt; text-align: justify">
+      This Agreement contains the whole agreement between the Parties relating
+      to the subject matter of this Agreement at the date of this Agreement and
+      supersedes any previous written or oral agreement between the Parties in
+      relation to the matters dealt with in this Agreement, including any other
+      terms of service which may be specified by the Service Provider.
+    </p>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <p style="padding-left: 7pt; text-indent: 0pt; text-align: center">
+      [<i><b>The rest of the page has been intentionally left blank</b></i
+      >]
+    </p>
+    <h1
+      style="
+        padding-top: 2pt;
+        padding-left: 7pt;
+        text-indent: 0pt;
+        text-align: center;
+      "
+    >
+      SIGNATURE PAGES
+    </h1>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <h1 style="padding-left: 13pt; text-indent: 0pt; text-align: justify">
+      IN WITNESS WHEREOF
+      <span class="p"
+        >the Parties have caused these presents and the duplicate thereof to be
+        executed by their authorized official on the day, month and year first
+        above written as hereinbefore appearing.</span
+      >
+    </h1>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <table
+      style="border-collapse: collapse; margin-left: 6.5pt"
+      cellspacing="0"
+    >
+      <tr style="height: 15pt">
+        <td
+          style="
+            width: 265pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s11" style="text-indent: 0pt; text-align: center">
+            SIGNED AND DELIVERED
+            <span class="s12">by the within named </span>[<span class="s13"
+              >●</span
+            >]
+          </p>
+        </td>
+        <td
+          style="
+            width: 15pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p class="s12" style="text-indent: 0pt; text-align: center">)</p>
+        </td>
+      </tr>
+      <tr style="height: 14pt">
+        <td
+          style="
+            width: 265pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p
+            class="s11"
+            style="text-indent: 0pt; line-height: 12pt; text-align: center"
+          >
+            PRIVATE LIMITED
+            <span class="s12">by the hand of its authorized official</span>
+          </p>
+        </td>
+        <td
+          style="
+            width: 15pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p
+            class="s12"
+            style="text-indent: 0pt; line-height: 12pt; text-align: center"
+          >
+            )
+          </p>
+        </td>
+      </tr>
+      <tr style="height: 14pt">
+        <td
+          style="
+            width: 265pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p style="text-indent: 0pt; text-align: left"><br /></p>
+          <p
+            style="
+              padding-left: 5pt;
+              text-indent: 0pt;
+              line-height: 1pt;
+              text-align: left;
+            "
+          />
+        </td>
+        <td
+          style="
+            width: 15pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p
+            class="s12"
+            style="text-indent: 0pt; line-height: 12pt; text-align: center"
+          >
+            )
+          </p>
+        </td>
+      </tr>
+      <tr style="height: 13pt">
+        <td
+          style="
+            width: 265pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p style="text-indent: 0pt; text-align: left"><br /></p>
+        </td>
+        <td
+          style="
+            width: 15pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p
+            class="s12"
+            style="text-indent: 0pt; line-height: 11pt; text-align: center"
+          >
+            )
+          </p>
+        </td>
+      </tr>
+    </table>
+
+    <div class="page-break"></div>
+
+    <table
+      style="border-collapse: collapse; margin-left: 6.5pt"
+      cellspacing="0"
+    >
+      <tr style="height: 15pt">
+        <td
+          style="
+            width: 265pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p
+            class="s11"
+            style="
+              padding-left: 5pt;
+              text-indent: 0pt;
+              line-height: 13pt;
+              text-align: left;
+            "
+          >
+            SIGNED AND DELIVERED
+            <span class="s12">by the within named </span>BKS
+          </p>
+        </td>
+        <td
+          style="
+            width: 15pt;
+            border-top-style: solid;
+            border-top-width: 1pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p
+            class="s12"
+            style="text-indent: 0pt; line-height: 13pt; text-align: center"
+          >
+            )
+          </p>
+        </td>
+      </tr>
+      <tr style="height: 13pt">
+        <td
+          style="
+            width: 265pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p
+            class="s11"
+            style="
+              padding-left: 5pt;
+              text-indent: 0pt;
+              line-height: 12pt;
+              text-align: left;
+            "
+          >
+            MYVAULT PRIVATE LIMITED <span class="s12">by the hand of its</span>
+          </p>
+        </td>
+        <td
+          style="
+            width: 15pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p
+            class="s12"
+            style="text-indent: 0pt; line-height: 12pt; text-align: center"
+          >
+            )
+          </p>
+        </td>
+      </tr>
+      <tr style="height: 15pt">
+        <td
+          style="
+            width: 265pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p
+            class="s12"
+            style="
+              padding-left: 5pt;
+              text-indent: 0pt;
+              line-height: 13pt;
+              text-align: left;
+            "
+          >
+            authorized official
+            <span class="s14"
+              >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+            >
+          </p>
+        </td>
+        <td
+          style="
+            width: 15pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p
+            class="s12"
+            style="text-indent: 0pt; line-height: 13pt; text-align: center"
+          >
+            )
+          </p>
+        </td>
+      </tr>
+      <tr style="height: 12pt">
+        <td
+          style="
+            width: 265pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p style="text-indent: 0pt; text-align: left"><br /></p>
+          <p
+            style="
+              padding-left: 5pt;
+              text-indent: 0pt;
+              line-height: 1pt;
+              text-align: left;
+            "
+          />
+        </td>
+        <td
+          style="
+            width: 15pt;
+            border-left-style: solid;
+            border-left-width: 1pt;
+            border-bottom-style: solid;
+            border-bottom-width: 1pt;
+            border-right-style: solid;
+            border-right-width: 1pt;
+          "
+        >
+          <p
+            class="s12"
+            style="text-indent: 0pt; line-height: 11pt; text-align: center"
+          >
+            )
+          </p>
+        </td>
+      </tr>
+    </table>
+    <div class="page-break"></div>
+    <h1
+      style="
+        padding-top: 2pt;
+        padding-left: 7pt;
+        text-indent: 0pt;
+        text-align: center;
+      "
+    >
+      SCHEDULE I
+    </h1>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <h1 style="padding-left: 7pt; text-indent: 0pt; text-align: center">
+      PART A: SCOPE OF SERVICES
+    </h1>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <p style="padding-left: 13pt; text-indent: 0pt; text-align: left">
+      <span class="p">1. [</span
+      ><span class="s8" style="background-color: #ff0"
+        >Note: Please insert the exact service being provided by the Service
+        Provider.</span
+      ><span class="p">]</span>
+    </p>
+    <p
+      class="s6"
+      style="
+        padding-top: 13pt;
+        padding-left: 7pt;
+        text-indent: 0pt;
+        text-align: center;
+      "
+    >
+      PART B: FEES
+    </p>
+    <p style="text-indent: 0pt; text-align: left"><br /></p>
+    <p style="padding-left: 41pt; text-indent: -28pt; text-align: left">
+      <span class="p">1. [</span
+      ><span class="s8" style="background-color: #ff0"
+        >Note: Please insert the exact payment terms for the service being
+        provided by the Service</span
+      ><span class="s9"> </span
+      ><span class="s8" style="background-color: #ff0">Provider.</span
+      ><span class="p">]</span>
+    </p>
+  </body>
+</html>
