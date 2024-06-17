@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emails</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0;
+      }
+      body {
+        max-width: 514px;
+        border: 1px solid black;
+        margin: 10px auto;
+        padding: 10px;
+        font-family: 'Roboto', sans-serif;
+      }
+      .container {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        margin: 10px 2px;
+      }
+
+      .header {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin: 10px auto;
+        padding: 12px 10px;
+        border: 1px solid rgb(70, 189, 245);
+        border-radius: 10px;
+        background-color: #fff8fd;
+        font-size: 14px;
+        position: relative;
+        overflow: hidden;
+      }
+      .font {
+        font-weight: 700;
+      }
+      .cong {
+        font-size: 24px;
+        color: #14c082;
+      }
+      .sona {
+        font-size: 18px;
+        color: black;
+      }
+
+      /* boxes */
+
+      .box1 {
+        height: 60px;
+        width: 60px;
+        top: -10px;
+        right: -20px;
+        position: absolute;
+        background-color: #ffd9fb;
+        border-radius: 100%;
+      }
+      .box2 {
+        height: 50px;
+        width: 50px;
+        top: 20%;
+        left: 10%;
+        position: absolute;
+        background-color: #fffae9e1;
+        border-radius: 100%;
+      }
+      .box3 {
+        height: 20px;
+        width: 20px;
+        bottom: 10%;
+        left: -2px;
+        position: absolute;
+        background-color: #ffd9fb;
+        border-radius: 100%;
+      }
+      .box4 {
+        height: 20px;
+        width: 20px;
+        bottom: 40%;
+        right: 10%;
+        position: absolute;
+        background-color: #e7dcb7c2;
+        border-radius: 100%;
+      }
+
+      .purchase {
+        padding: 10px 10px;
+        border: 1px solid rgb(70, 189, 245);
+        border-radius: 10px;
+        background-color: #fff8fd;
+        font-size: 14px;
+      }
+      .purchase > p {
+        font-weight: 600;
+      }
+      .hr {
+        margin: 10px 0px;
+        border: 0.8px solid #ffdbf3;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+      }
+
+      td {
+        padding: 5px 0px;
+      }
+      .gray {
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <img
+          src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mygold.png"
+          alt="mygold"
+          width="120"
+        />
+      </div>
+
+      <div class="header font">
+        <img src="./digi.svg" alt="" width="100px" />
+        <p>Dear Jitender Singh Danu</p>
+        <p class="cong">Congratulations!</p>
+        <p style="max-width: 400px; line-height: 20px">
+          Life ab chamakne wali hai kyunki, <br />
+          You have bought 10.000 gm of Gold with MyGold!
+        </p>
+        <p class="sona">Sona Badega, Life Chamkega!</p>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+      </div>
+      <div class="purchase">
+        <p>Purchased Confirmation Details</p>
+        <hr class="hr" />
+        <table>
+          <tbody>
+            <tr>
+              <td align="left" class="gray">Order ID</td>
+              <td align="right"># 998</td>
+            </tr>
+            <tr>
+              <td align="left" class="gray">Gold Quantity</td>
+              <td align="right">998 gm</td>
+            </tr>
+            <tr>
+              <td align="left" class="gray">Buy Gold Rate</td>
+              <td align="right">₹ 998/gm</td>
+            </tr>
+            <tr>
+              <td align="left" class="gray">Gold Value</td>
+              <td align="right">₹ 998</td>
+            </tr>
+            <tr>
+              <td align="left" class="gray">GST 3%</td>
+              <td align="right">998</td>
+            </tr>
+          </tbody>
+        </table>
+        <hr class="hr" />
+        <table>
+          <tbody>
+            <tr>
+              <td align="left" class="gray">Total Amount</td>
+              <td align="right">₹ 998</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
