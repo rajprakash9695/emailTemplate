@@ -8,17 +8,22 @@
       * {
         margin: 0px;
         padding: 0;
+        background-color: ffffff;
       }
       body {
-        max-width: 514px;
+        padding: 0 10px;
+        max-width: 20rem;
         border: 1px solid black;
         margin: 0px auto;
-
+        background-color: white;
         font-family: 'Roboto', sans-serif;
       }
-
+      .container {
+        border: 1px solid black;
+        padding: 5px;
+      }
       .main {
-        padding: 20px 20px;
+        padding: 10px 10px;
       }
 
       .logo {
@@ -28,14 +33,10 @@
       }
 
       .header {
-        gap: 10px;
-        display: flex;
-        flex-direction: column;
         text-align: center;
-        align-items: center;
         margin: 10px auto;
         padding: 12px 10px;
-        border: 1px solid rgb(70, 189, 245);
+        border: 1px solid #ffdbf3;
         border-radius: 10px;
         background-color: #fff8fd;
         font-size: 14px;
@@ -47,56 +48,19 @@
       }
       .cong {
         font-size: 22px;
+        margin: 10px 0px;
         color: #14c082;
       }
       .sona {
-        font-size: 18px;
+        font-size: 16px;
+        margin-top: 10px;
         color: black;
-      }
-
-      /* boxes */
-
-      .box1 {
-        height: 60px;
-        width: 60px;
-        top: -10px;
-        right: -20px;
-        position: absolute;
-        background-color: #ffd9fb;
-        border-radius: 100%;
-      }
-      .box2 {
-        height: 50px;
-        width: 50px;
-        top: 20%;
-        left: 10%;
-        position: absolute;
-        background-color: #fffae9e1;
-        border-radius: 100%;
-      }
-      .box3 {
-        height: 20px;
-        width: 20px;
-        bottom: 10%;
-        left: -2px;
-        position: absolute;
-        background-color: #ffd9fb;
-        border-radius: 100%;
-      }
-      .box4 {
-        height: 20px;
-        width: 20px;
-        bottom: 40%;
-        right: 10%;
-        position: absolute;
-        background-color: #e7dcb7c2;
-        border-radius: 100%;
       }
 
       .purchase {
         margin-top: 20px;
         padding: 10px 10px;
-        border: 1px solid rgb(70, 189, 245);
+        border: 1px solid #ffdbf3;
         border-radius: 10px;
         background-color: #fff8fd;
         font-size: 13px;
@@ -130,12 +94,6 @@
         width: 100%;
       }
 
-      /* .banner {
-        gap: 25px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-      } */
       .banner > img {
         width: 100%;
         margin: 10px auto;
@@ -145,13 +103,11 @@
       }
       .social {
         margin: 15px auto;
-        gap: 20px;
-        display: flex;
-        justify-content: center;
       }
 
       .social img {
         height: 30px;
+        margin: 0px 10px 0px 10px;
       }
 
       .line {
@@ -175,14 +131,14 @@
     <div class="container">
       <div class="main">
         <div>
-          <div class="logo">
+          <div style="width: 100%">
             <img
               src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mygold.png"
               alt="mygold"
               width="120"
+              style="margin-left: 30%"
             />
           </div>
-
           <div class="header font">
             <img
               src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/icons/digi.svg"
@@ -196,10 +152,6 @@
               You have bought 10.000 gm of Gold with MyGold!
             </p>
             <p class="sona">Sona Badega, Life Chamkega!</p>
-            <div class="box1"></div>
-            <div class="box2"></div>
-            <div class="box3"></div>
-            <div class="box4"></div>
           </div>
           <div class="purchase">
             <p>Purchased Confirmation Details</p>
@@ -289,17 +241,17 @@
               target="_blank"
             >
               <img
-                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/facebook.svg"
+                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/facebook.png"
                 alt="facebook"
             /></a>
             <a href="https://x.com/MyGoldHQ" target="_blank">
               <img
-                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/twitter.svg"
+                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/twitter.png"
                 alt="twitter"
             /></a>
             <a href="https://www.instagram.com/mygold_app/" target="_blank">
               <img
-                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/instagram.svg"
+                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/instagram.png"
                 alt="instagram"
             /></a>
             <a
@@ -307,7 +259,7 @@
               target="_blank"
             >
               <img
-                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/linkdin.svg"
+                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/linkdin.png"
                 alt="linkdin"
             /></a>
           </div>
@@ -331,5 +283,3 @@
     </div>
   </body>
 </html>
-
-<!-- <%- include('./footer.ejs') %> -->
