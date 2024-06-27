@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Custody</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+      }
+
+      .container {
+        padding: 40px 40px 40px 40px;
+        height: 100%;
+        background-image: linear-gradient(
+          142.47deg,
+          #251f62 -2.91%,
+          #541343 104.12%
+        );
+      }
+      .golden {
+        height: 100%;
+        background-color: #d1ae51;
+        border-radius: 10px;
+        padding: 15px;
+        overflow: hidden;
+      }
+      .containt {
+        height: 92%;
+        background-color: white;
+        border-radius: 10px;
+        padding: 40px;
+        overflow: hidden;
+      }
+
+      .head > p {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 50px;
+      }
+      .head > img {
+        height: 70px;
+      }
+
+      .mid {
+        margin: 50px 50px 50px 50px;
+      }
+
+      .data {
+        gap: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .data-item {
+        margin-bottom: 20px;
+      }
+      .data-value {
+        margin-bottom: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="golden">
+        <div class="containt">
+          <div>
+            <div
+              class="head"
+              style="
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+              "
+            >
+              <p style="color: #431546">
+                Certificate of <br />
+                Custody
+              </p>
+              <img
+                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mygold.png"
+                alt="mygold"
+              />
+            </div>
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 100px;
+              "
+            >
+              <div>
+                <p
+                  style="
+                    text-align: center;
+                    font-weight: 600;
+                    color: #310c27;
+                    font-size: large;
+                  "
+                >
+                  This document confirms the safekeeping and custody of <br />
+                  your precious Gold with our Trusted Gold Storage Partner
+                </p>
+                <p
+                  style="
+                    text-align: center;
+                    margin: 50px 0px 50px 0px;
+                    font-size: larger;
+                  "
+                >
+                  *Terms of Bailment apply
+                </p>
+                <div class="mid">
+                  <div class="data">
+                    <div>
+                      <p class="data-item">Name of the Customer</p>
+
+                      <p class="data-item">Weight of the Gold (gm)</p>
+
+                      <p class="data-item">Date of Custody Taken</p>
+                    </div>
+                    <div>
+                      <div
+                        class="data-value"
+                        style="width: 200px; border-bottom: 2px dashed black"
+                      >
+                        <p><%= name %></p>
+                      </div>
+                      <div
+                        class="data-value"
+                        style="width: 200px; border-bottom: 2px dashed black"
+                      >
+                        <p><%= quantity %></p>
+                      </div>
+                      <div
+                        class="data-value"
+                        style="width: 200px; border-bottom: 2px dashed black"
+                      >
+                        <p><%= date %></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="data" style="margin-top: 100px">
+                  <img
+                    src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/partners.png"
+                    alt=""
+                    width="550px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
