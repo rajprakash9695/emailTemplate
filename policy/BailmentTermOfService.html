@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bailment Term of Service</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid black;
+      }
+
+      .h1 {
+        font-weight: 600;
+      }
+      .center {
+        text-align: center;
+      }
+      .margin-top {
+        margin-top: 15px;
+      }
+
+      .text {
+        font-size: 16px;
+      }
+
+      .ul-out {
+        list-style-position: outside;
+      }
+
+      /* style */
+      ol {
+        list-style: none;
+        padding-left: 0px;
+      }
+
+      ol li {
+        position: relative; /* Needed for the pseudo-element positioning */
+        padding-left: 35px; /* Space for the custom marker */
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      ol li::before {
+        content: attr(
+          data-list-text
+        ); /* Use the data-list-text attribute for content */
+        position: absolute; /* Position the custom marker */
+        left: 0; /* Align the custom marker to the left */
+        top: 0;
+        color: black; /* Customize as needed */
+        font-weight: bold; /* Customize as needed */
+      }
+
+      .index {
+        gap: 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dotted black;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 6px 5px;
+        border: 1px solid black;
+      }
+
+      th {
+        background-color: #ededed;
+        border: 1px solid black;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <p class="center">
+        <b>TERMS OF USE FOR BAILMENT</b>
+      </p>
+      <br />
+      <p>
+        For the purpose of participating in the bailment of Digital Gold
+        reflected in your account on the Platform, please read these terms
+        (hereinafter “<span class="h1">Bailment Terms</span>”) in addition to
+        the Terms of Service of the Platform. MyGold and/or its bailment
+        partners (“<span class="h1">Partners</span>”) offers the Bailment
+        Service conditioned upon your acceptance of all terms conditions
+        policies and notices stated here. These Bailment Terms shall be read in
+        addition to, and not in derogation of, the Terms of Service.
+      </p>
+      <br />
+      <p>
+        You can review the most current version of the Bailment Terms at any
+        time on this page. MyGold and the Partners reserves the right to update,
+        change or replace any part of these Bailment Terms by posting updates
+        and/or changes. It is your responsibility to check this page
+        periodically for changes. Following the posting of any changes, your
+        continued use of or access to the website or platform or the use of the
+        Bailment Services constitutes acceptance of such revised Bailment Terms.
+      </p>
+      <br />
+      <p>
+        <b>
+          PLEASE NOTE THAT THESE TERMS APPLY TO THE BAILMENT OF ANY DIGITAL GOLD
+          AND FOR ANY BAILMENT OR PROVISION OF PHYSICAL GOLD, PLEASE REFER TO
+          THE GOLD HANDOVER LETTER PROVIDED.
+        </b>
+      </p>
+      <br />
+      <ol class="margin-top ul-out">
+        <li data-list-text="1.">
+          <p class="h1">Definitions</p>
+          <br />
+          <p>
+            Capitalized terms used in these Bailment Terms but not defined
+            herein, shall have the meanings ascribed to them under the Terms of
+            Service. Capitalized terms, not defined elsewhere in these Bailment
+            Terms, shall mean as follows:
+          </p>
+          <br />
+          <p>
+            "<span class="h1">Bailment Services</span>" means the bailment of
+            the Digital Gold by a User to a Partner for onward leasing or
+            bailment of the Physical Gold to End Users to generate returns in
+            Physical Gold for the User;
+          </p>
+          <br />
+          <p>
+            “<span class="h1">Bailor</span>” means a User who avails the
+            Bailment Services from a Partner in accordance with these Bailment
+            Terms;
+          </p>
+          <br />
+          <p>
+            "<span class="h1">End User</span>" means jewelers or other users of
+            the Physical Gold who shall be provided the Physical Gold by the
+            Partner pursuant to the Bailment Services;
+          </p>
+          <br />
+          <p>
+            "<span class="h1">Person</span>" shall mean any natural person,
+            limited or unlimited liability company, corporation, partnership
+            (whether limited or unlimited), proprietorship, Hindu undivided
+            family, trust, union, association, government or any agency or
+            political subdivision thereof or any other entity that may be
+            treated as a person under applicable law;
+          </p>
+          <br />
+          <p>
+            "<span class="h1">Platform</span>" means the mobile / web
+            application and web-based platform owned and operated by MyGold,
+            including any updates thereof, to be used for the provision of the
+            Services;
+          </p>
+          <br />
+          <p>
+            "<span class="h1">Physical Gold</span>" means the gold obtained by
+            the Partner by the conversion / liquidation of the Digital Gold of
+            the User for provision of the Bailment Services;
+          </p>
+          <br />
+          <p>
+            "<span class="h1">Services</span>" shall have the meaning ascribed
+            to them under the Terms of Service;
+          </p>
+          <br />
+          <p>
+            "<span class="h1">Terms of Service</span>" means the terms of use of
+            the Platform, as specified MyGold;
+          </p>
+        </li>
+        <li data-list-text="2.">
+          <p class="h1">Provision of the Physical Gold to the Partner</p>
+          <ol>
+            <li data-list-text="2.1">
+              By availing of any Bailment Service, you engage MyGold to provide
+              the Digital Gold selected by you to the Partner. For facilitating
+              such provision of the Digital Gold on bailment basis, you agree
+              and understand that MyGold is merely acting as a facilitator to
+              provide the same to the Partner for and on your behalf and shall
+              be entitled to undertake such actions as it may deem fit to
+              protect your interests in My Gold’s reasonable judgement.
+            </li>
+            <li data-list-text="2.2">
+              By availing of any Bailment Service, you agree and direct that the
+              records of transfer and ownership of the Digital Gold may be
+              modified or altered to provide such Digital Gold to the Partner
+              for conversion into Physical Gold for the provision of the
+              Bailment Services. You agree and accept that MyGold and such
+              Partners shall be entitled to do all acts, deeds and things, as
+              may be required to give effect to the same and you shall be bound
+              by such actions.
+            </li>
+            <li data-list-text="2.3">
+              Notwithstanding anything to the contrary contained in these
+              Bailment Terms, it is hereby expressly understood by you that
+              MyGold and the Partners shall have no obligation to facilitate any
+              provision of any Bailment Services and shall have complete
+              discretion to refuse any request for provision of Bailment
+              Services at any time without giving any reason for such refusal
+              and shall incur no liability in respect of any such refusal.
+            </li>
+          </ol>
+        </li>
+        <li data-list-text="3.">
+          <p class="h1">Use of the Bailment Services</p>
+          <ol>
+            <li data-list-text="3.1">
+              You may request for the availing of the Bailment Services for any
+              Digital Gold held by you recorded on the Platform and you may
+              submit a request, in the form specified on the Platform, whereby,
+              you have to specify inter alia (a) the quantity of Digital Gold to
+              be transferred as per the Bailment Terms, provided that such
+              quantity shall at all times be more than the minimum quantity (if
+              applicable) indicated on the Bailment Terms (b) your acceptance of
+              the Bailment Terms.
+            </li>
+            <li data-list-text="3.2">
+              On conversion of the Digital Gold into Physical Gold, the Partner
+              shall provide the Physical Gold to the End Users, as determined by
+              the Partner, on a sub-bailment basis. You agree and accept that in
+              connection with such Bailment Services, you shall be provided
+              details of such Bailment Services and retains on the Digital Gold
+              entirely electronically, you agree that by accepting the Bailment
+              Terms and providing any Digital Gold for the Bailment Services,
+              you shall receive all return on the Digital Gold in the manner
+              specified by MyGold and the Partners. You agree that the Partner
+              shall be responsible for enforcing and managing claims or demands
+              against the End Users and you shall not be provided any details or
+              contacts of the End Users. In case to any default of the End
+              Users, you shall have no direct claim against such End Users in
+              any manner whatsoever.
+            </li>
+            <li data-list-text="3.3">
+              You agree that the return provided on the Digital Gold pursuant to
+              the Bailment Services is provided basis the return or rental or
+              interest paid or provided by the End Users to the Partner and you
+              shall not be entitled to any return on the Bailment Services until
+              the relevant deployment and receipt of return by the Partners. In
+              case the Partner is unable to provide the Physical Gold to the End
+              Users, you agree that the Partner and MyGold may suspend or
+              terminate the Bailment Services, including the payment of any
+              return.
+            </li>
+            <li data-list-text="3.4">
+              You represent that you have good title over the Digital Gold and
+              are entitled to avail of the Bailment Services. You shall be
+              returned the Digital Gold which has been provided by you for the
+              Bailment Services only on the termination or completion of the
+              underlying arrangement between the Partner and the End User for
+              the relevant Physical Gold. In case you make any redemption or
+              termination request before termination or completion of the
+              underlying arrangement between the Partner and the End User for
+              the relevant Physical Gold, MyGold and the Partner shall attempt
+              to find replacement user(s) for the transfer of your Bailment
+              Service in respect of such Digital Gold. In case MyGold and the
+              Partner and unable to find such replacement user, you may not be
+              able to cancel the Bailment Service. This is without prejudice to
+              MyGold and the Partner’s right at any time to cancel the Bailment
+              Service and return your Digital Gold, including on account of the
+              instructions of any governmental authority.
+            </li>
+            <li data-list-text="3.5">
+              You acknowledge that your acceptance of the Bailment Terms and the
+              provision of the request for any Bailemnt Services shall be
+              adequate proof confirming your intention to provide the Digital
+              Gold on bailment in accordance with the terms contained herein
+              read with the relevant Bailment Terms. MyGold and the Partners
+              shall not be liable to you for any claim, under any circumstance,
+              with respect to bailment of the Digital Gold based on your
+              request. MyGold shall make all best efforts to provide
+              uninterrupted access to the Platform. In the event of interruption
+              to the Platform, MyGold shall use best endeavours to restore the
+              Platform as soon as reasonably possible. You agree and acknowledge
+              that no warranty of any kind, implied, express or statutory,
+              including but not limited to the warranties of non-infringement of
+              third party rights, title, merchantability, satisfactory quality
+              or fitness for a particular purpose, is given in conjunction with
+              the Platform and the Bailment Services are provided on an “as is”,
+              “where is”, “with all faults” basis.
+            </li>
+          </ol>
+        </li>
+        <li data-list-text="4.">
+          <p class="h1">Calculation of rental</p>
+          <ol>
+            <li data-list-text="4.1">
+              You agree and understand that based on the Digital Gold which has
+              been provided to the Partner pursuant to the Bailment Service, the
+              Partner shall sub-bail the same to End Users and, based on the
+              return paid by the End Users, you shall be paid a return on the
+              Digital Gold bailed by you pursuant to the Bailment Services. The
+              return shall be calculated on daily/monthly basis and accrue from
+              day to day/month to month and shall be computed on the basis of
+              365 (Three Hundred and Sixty-Five) days a year and the actual
+              number of days elapsed and your return shall be specified on the
+              Platform.
+            </li>
+            <li data-list-text="4.2">
+              The Bailment Service for any Digital Gold shall be for a specified
+              fixed term and any return shall be paid after the completion of a
+              minimum period as specified by the Partner. You may not terminate
+              the Bailment Services during the specified lock-in period. In case
+              you choose to terminate the Bailment Services, you agree that any
+              Digital Gold and any earned return will be returned to you
+              assuming the proportionate amount of Physical Gold and the return
+              is recovered by the Partner from the End User. If however, the
+              underlying terms of the arrangement between the End User and the
+              Partner does not enable the Partners to immediately receive such
+              Physical Gold, you may not be able to terminate the Bailment
+              Services and the relevant Digital Gold shall remain locked in.
+              However, MyGold and the Partner shall attempt to arrange for an
+              alternative user to assume the Bailment Services availed by you to
+              release your digital gold.
+            </li>
+            <li data-list-text="4.3">
+              You agree and understand that the return on the Digital Gold shall
+              be reflected in the relevant grams of Digital Gold which shall be
+              reflected on your account on the Platform.
+            </li>
+            <li data-list-text="4.4">
+              <span class="h1"
+                >YOU UNDERSTAND AND AGREE THAT MYGOLD AND THE PARTNERS DOES NOT
+                MAKE ANY DEDUCTIONS OR FILINGS ON YOUR BEHALF PURSUANT TO THE
+                PAYMENT OF ANY RETURN ON YOUR DIGITAL GOLD. PLEASE CONSULT YOUR
+                TAX ADVISORS TO DETERMINE IF YOU HAVE ANY TAX LIABILITY ON THE
+                INCOME EARNED FROM THE RETURN EARNED ON YOUR DIGITAL GOLD.
+              </span>
+            </li>
+          </ol>
+        </li>
+        <li data-list-text="5.">
+          <p class="h1">Responsibilities</p>
+          <ol>
+            <li data-list-text="5.1">
+              The End Users shall be solely and completely responsible and
+              liable for any and all Digital Gold advanced to the Partner
+              pursuant to the Bailemnt Services until the Digital Gold and any
+              applicable return has been returned to the Partner. During the
+              period of Bailment, the End User shall be solely responsible for
+              the safekeeping of the Digital Gold.
+            </li>
+            <li data-list-text="5.2">
+              The risk of any loss, theft, detention or damage to, or
+              deterioration in value of the Digital Gold shall be solely borne
+              by the End User.
+            </li>
+            <li data-list-text="5.3">
+              It is hereby agreed and understood between the that property and
+              all rights to title and interest in any Digital Gold shall remain
+              with you.
+            </li>
+          </ol>
+        </li>
+        <li data-list-text="6.">
+          <p class="h1">Rights Granted</p>
+          <br />
+          <p>
+            For purpose of effectuating the bailment of the Physical Gold to End
+            Users, you hereby grant and authorise the Partners to (a) receive
+            the Physical Gold from the Digital Gold; (b) handover the Physical
+            Gold to the End Users and enter into arrangements with End Users;
+            and (b) undertake all such activities that may be required to be
+            undertaken by the Partner to effectuate the transaction contemplated
+            under the Bailment Terms; and (c) undertake all such acts to protect
+            your interest in the Partner’s reasonable discretion.
+          </p>
+        </li>
+        <li data-list-text="7.">
+          <p class="h1">Transfer of rights, risk and ownership</p>
+          <ol>
+            <li data-list-text="(a)">
+              You understand and agree that from the date of the availing of the
+              Bailment Services, the End User shall be solely and completely
+              responsible and liable for any and all Physical Gold advanced to
+              the End User.
+            </li>
+            <li data-list-text="(b)">
+              You agree and understand that the risk of any loss, theft,
+              detention or damage to, or deterioration in value of the End User
+              advanced to the End User shall be solely borne by the End User and
+              the End User shall be liable to the Partner and to you for any and
+              all loss or damage to such Physical Gold.
+            </li>
+            <li data-list-text="(c)">
+              It is clarified that there shall be no transfer of title or legal
+              ownership of the Digital Gold or the Physical Gold from You to the
+              End User at any time.
+            </li>
+            <li data-list-text="(d)">
+              You understand that the monetary value of your Physical Gold may
+              vary between the date of provision of the Digital Gold and any
+              return.
+            </li>
+          </ol>
+        </li>
+        <li data-list-text="8.">
+          <p class="h1">Hold harmless</p>
+          <ol>
+            <li data-list-text="8.1">
+              You agree and understand that MyGold is a facilitator,
+              facilitating the Bailment Services. You have agreed to provide the
+              Digital Gold on a bailment at your sole risk and have read these
+              Bailment Terms and are aware of the consequences thereof. The
+              Partner and MyGold shall not be responsible for your decisions
+              resulting from the bailment of the Digital Gold.
+            </li>
+            <li data-list-text="8.2">
+              You hereby release and agree to hold harmless MyGold, the
+              Partners, and their respective affiliates/group companies, its
+              directors, officers, employees, agents, successors, advisors,
+              consultants, representatives, and assigns from any and all claims,
+              losses, related suits, actions, proceedings, investigations,
+              judgments, deficiencies, damages, settlements, liabilities,
+              reasonable legal fees and expenses incurred, due to your acts or
+              omissions.
+            </li>
+          </ol>
+        </li>
+        <li data-list-text="9.">
+          <p class="h1">Change in law</p>
+          <br />
+          <p>
+            You understand and agree that the Bailment Services is at present
+            not regulated by any applicable law and there are no specific
+            guidelines regulating the same by the Reserve Bank of India (“<span
+              class="h1"
+              >RBI</span
+            >”) and/or any other regulatory authority. You understand and agree
+            that, if any introduction or change in the interpretation of any
+            applicable law issued by RBI or any other governmental authority
+            (“<span class="h1">Change in Law</span>”) (a) affects you, MyGold or
+            the Partner directly or indirectly, including without limitation,
+            with respect to (i) increasing the cost to MyGold or the Partner of
+            performing its obligations hereunder; (ii) reducing any amount
+            received or receivable by you hereunder; or (iii) changes the
+            effective return of the Digital Gold to be received by you
+            hereunder; or (b) makes it illegal for you to provide the Digital
+            Gold on a bailment basis or otherwise deal in Digital Gold or
+            Physical Gold with the End User or the Partner or it becomes illegal
+            for the End User to avail the bailment, then MyGold or the Partner
+            may in their sole discretion, terminate this engagement and these
+            Bailment Terms, including any engagement with the End Users. You
+            acknowledge and understand that any loss suffered by you pursuant to
+            such Change in Law shall be at your own sole risk. You further
+            understand that you will not have any legal recourse in case of any
+            decisions taken by MyGold or the Partner in case of such Change in
+            Law.
+          </p>
+        </li>
+        <li data-list-text="10.">
+          <p class="h1">DISCLAIMER</p>
+          <br />
+          <p>
+            <span class="h1"
+              >YOU UNDERSTAND AND AGREE THAT USE OF THE PLATFORM AND THE
+              AVAILING OF THE BAILMENT SERVICES IS AT YOUR SOLE RISK. MYGOLD OR
+              THE PARNER DOES NOT GUARANTEE ANY RETURNS, ON ANY BAILMENT
+              SERVICES CONSUMMATED VIS-À- VIS THE PLATFORM, TO ANY PERSON,
+              EITHER DIRECTLY OR INDIRECTLY. YOU SHALL BE SOLELY RESPONSIBLE FOR
+              UNDERTAKING APPROPRIATE AND EFFECTIVE ANALYSIS BEFORE UNDERTAKING
+              ANY BAILMENT OF ANY DIGITAL GOLD PURSUANT TO THESE BAILMENT TERMS.
+              YOU FURTHER ACKNOWLEDGE AND AGREE THAT MYGOLD, THE PARTNER, OR
+              THEIR RESPECTIVE AFFILIATES AND THEIR RESPECTIVE OFFICERS,
+              DIRECTORS, EMPLOYEES AND AGENTS SHALL HAVE NO LIABILITY TO YOU OR
+              ANY OTHER PERSON FOR YOUR BAILMENT OF ANY DIGITAL GOLD OR OTHER
+              DECISIONS IN RELATION THERETO WHILST USING THE PLATFORM.
+            </span>
+          </p>
+          <br />
+          <p>
+            <span class="h1"
+              >YOU FURTHER UNDERSTAND AND AGREE THAT UNDER THIS ARRANGEMENT AND
+              PURSUANT TO THE AVAILING OF THE BAILMENT SERVICES, YOU AT ALL
+              TIMES RETAIN THE TITLE OF, AND REMAIN THE OWNER OF, THE DIGITAL
+              GOLD AND ANY RESULTANT PHYSICAL GOLD AND THAT REPAYMENT WITH
+              RESPECT TO THE BAILED GOLD WILL BE MADE IN GRAMS AND DEPENDS ON
+              THE CHANGE IN PRICE OF GOLD. MYGOLD DOES NOT IN ANY MANNER
+              GUARANTEE OR ASSURE THAT THE BAILMENT OF THE DIGITAL GOLD AND ANY
+              RESULTANT PHYSICAL GOLD PURSUANT TO THESE BAILMENT TERMS WILL
+              RESULT IN ANY MONETARY PROFIT AND/OR ANY OTHER BENEFIT/RETURN TO
+              YOU.
+            </span>
+          </p>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>
