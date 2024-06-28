@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VLease Partner Agreement</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid black;
+      }
+
+      .h1 {
+        font-weight: 600;
+      }
+      .center {
+        text-align: center;
+      }
+      .margin-top {
+        margin-top: 15px;
+      }
+
+      .text {
+        font-size: 16px;
+      }
+
+      .ul-out {
+        list-style-position: outside;
+      }
+
+      /* style */
+      ol {
+        list-style: none;
+        padding-left: 0px;
+      }
+
+      ol li {
+        position: relative; /* Needed for the pseudo-element positioning */
+        padding-left: 35px; /* Space for the custom marker */
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      ol li::before {
+        content: attr(
+          data-list-text
+        ); /* Use the data-list-text attribute for content */
+        position: absolute; /* Position the custom marker */
+        left: 0; /* Align the custom marker to the left */
+        top: 0;
+        color: black; /* Customize as needed */
+        font-weight: bold; /* Customize as needed */
+      }
+
+      .index {
+        gap: 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px dotted black;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 10px;
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 6px 5px;
+        border: 1px solid black;
+      }
+
+      th {
+        background-color: #ededed;
+        border: 1px solid black;
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div style="text-align: center; margin-top: 50px">
+        <p>Dated: <span><%= date %></span></p>
+        <br />
+        <p class="h1">BAILMENT AGREEMENT</p>
+        <br />
+        <br />
+        <br />
+        <br />
+        <p class="h1">BETWEEN</p>
+        <br />
+        <br />
+        <p class="h1">BKS MYGOLD PRIVATE LIMITED</p>
+        <p>(as the Company)</p>
+        <br />
+        <br />
+        <p class="h1">AND</p>
+        <br />
+        <br />
+        <p class="h1"><%= bailee %></p>
+        <p>(as the Bailee)</p>
+      </div>
+      <div class="page-break"></div>
+      <div style="margin-top: 30px">
+        <p class="h1" style="text-align: center">TABLE OF CONTENTS</p>
+        <ol class="margin-top ul-out h1">
+          <li data-list-text="1.">
+            <div class="index">
+              <p class="h1"><a href="#define">DEFINITIONS</a></p>
+              <p class="h1">3</p>
+            </div>
+          </li>
+          <li data-list-text="2.">
+            <div class="index">
+              <p class="h1"><a href="#inter">INTERPRETATION</a></p>
+              <p class="h1">4</p>
+            </div>
+          </li>
+          <li data-list-text="3.">
+            <div class="index">
+              <p class="h1"><a href="#role">ROLE OF THE COMPANY</a></p>
+              <p class="h1">4</p>
+            </div>
+          </li>
+          <li data-list-text="4.">
+            <div class="index">
+              <p class="h1"><a href="#term">TERMS OF BAILMENT</a></p>
+              <p class="h1">5</p>
+            </div>
+          </li>
+          <li data-list-text="5.">
+            <div class="index">
+              <p class="h1"><a href="#security">SECURITY</a></p>
+              <p class="h1">5</p>
+            </div>
+          </li>
+          <li data-list-text="6.">
+            <div class="index">
+              <p class="h1"><a href="#cons">TERMINATION AND CONSEQUENCES</a></p>
+              <p class="h1">6</p>
+            </div>
+          </li>
+          <li data-list-text="7.">
+            <div class="index">
+              <p class="h1"><a href="#inden">INDEMNIFICATION</a></p>
+              <p class="h1">6</p>
+            </div>
+          </li>
+          <li data-list-text="8.">
+            <div class="index">
+              <p class="h1">
+                <a href="#warr">REPRESENTATIONS AND WARRANTIES</a>
+              </p>
+              <p class="h1">7</p>
+            </div>
+          </li>
+          <li data-list-text="9.">
+            <div class="index">
+              <p class="h1">
+                <a href="#law">APPLICABLE LAW AND ARBITRATION</a>
+              </p>
+              <p class="h1">7</p>
+            </div>
+          </li>
+          <li data-list-text="10.">
+            <div class="index">
+              <p class="h1"><a href="#misc">MISCELLANEOUS</a></p>
+              <p class="h1">7</p>
+            </div>
+          </li>
+          <li data-list-text="">
+            <div class="index">
+              <p class="h1"><a href="#sign">SIGNATURE PAGES</a></p>
+              <p class="h1">9</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <div class="page-break"></div>
+      <div style="margin-top: 30px">
+        <p class="h1 center">BAILMENT AGREEMENT</p>
+        <br />
+        <p>
+          This <span class="h1"> BAILMENT AGREEMENT (“Agreement”) </span>is made
+          on this <span><%= [●] %></span> day of <span><%= [●] %></span>, 2024
+          (“<span class="h1">Execution Date</span>”)
+          <span class="h1">BETWEEN:</span>
+        </p>
+        <br />
+        <ol class="margin-top ul-out">
+          <li data-list-text="(1)">
+            <span class="h1">BKS MyGold Private Limited</span> , a company
+            incorporated under the Companies Act, 2013 with CIN
+            U36911UP2021PTC152605, and having its registered office at 3rd
+            Floor,M-13, Gole Market Mahanagar, Lucknow, Uttar Pradesh-226006
+            (hereinafter referred to as the “<span class="h1">Company”</span> ,
+            which expression shall, unless it be repugnant to the context or
+            meaning thereof, be deemed to mean and include its successors and
+            permitted assigns) of the <span class="h1">FIRST PART</span>
+          </li>
+          <li data-list-text="(2)">
+            <span><%= [●] %></span>, a company incorporated under the Companies
+            Act, 2013 with CIN <span><%= [●] %></span> , and having its office
+            at <span><%= [●] %></span>(hereinafter referred to as the “Bailee”,
+            which expression shall, unless it be repugnant to the context or
+            meaning thereof, be deemed to mean and include its successors and
+            permitted assigns) of the <span class="h1">SECOND PART</span>
+          </li>
+        </ol>
+        <br />
+        <p>
+          (Company and the Bailee are hereinafter collectively referred to as
+          the “Parties” and individually each as a “<span class="h1"
+            >Party</span
+          >
+          ”.)
+        </p>
+        <br />
+        <p class="h1">WHEREAS</p>
+
+        <ol class="margin-top ul-out">
+          <li data-list-text="A.">
+            Company is engaged in the business of providing the Bailed Gold on
+            bailment basis.
+          </li>
+          <li data-list-text="B.">
+            Bailee has approached the Company for facilitation and availing of
+            the bailment of the Bailed Gold and has agreed to pay the Rental for
+            the Bailed Gold in accordance with this Agreement (“Bailment”).
+          </li>
+          <li data-list-text="C.">
+            The Parties are now desirous of recording their understanding and
+            have accordingly agreed to enter into and execute this Agreement.
+          </li>
+        </ol>
+        <br />
+        <p class="h1">
+          NOW, THEREFORE, in consideration of the representations, warranties,
+          mutual agreements and covenants contained in this Agreement and other
+          good and valuable consideration (the receipt and adequacy of which are
+          hereby mutually acknowledged), the Parties hereby agree as follows:
+        </p>
+        <ol class="margin-top ul-out">
+          <li id="define" data-list-text="1.">
+            <p class="h1">DEFINITIONS</p>
+            <br />
+            <p>
+              In this Agreement, the following words and expressions shall,
+              except where the context otherwise requires, have the following
+              meanings respectively:
+            </p>
+            <br />
+            <p>
+              <span class="h1"> “Bailed Gold”</span>
+              means the pure 24 karat gold, which will be granted to the Bailee
+              in terms of this Agreement;
+            </p>
+            <br />
+            <p>
+              <span class="h1">“Gold Drawdown Notice”</span>
+              shall mean the form annexed with this Agreement as Schedule, which
+              shall be executed by the Company and the Bailee, specifying inter
+              alia, the Bailed Gold, Rental, Rental Payment Date, and the
+              applicable Repayment Date;
+            </p>
+            <br />
+            <p>
+              <span class="h1">“Rental”</span>
+              shall mean the rent payable to the Company by the Bailee, for the
+              Bailed Gold for a Gold Drawdown Notice, as agreed at the time of
+              the Bailment;
+            </p>
+            <br />
+            <p>
+              <span class="h1">“Rental Payment Date”</span>
+              means the date on which the Bailee is required to pay the rental
+              on the Bailed Gold, in physical gold of 24 karat purity or such
+              other form as specified by the Company, in form and substance
+              acceptable to the Company; and
+            </p>
+            <br />
+            <p>
+              <span class="h1"> “Repayment Date” </span>
+              shall mean the date on which the Bailee shall return the entire
+              amount of the applicable Bailed Gold, as specified in the Gold
+              Drawdown Notice, as per terms and conditions of this Agreement.
+            </p>
+          </li>
+          <li id="inter" data-list-text="2.">
+            <p class="h1">INTERPRETATION</p>
+            <br />
+            <p>In this Agreement:</p>
+            <ol class="margin-top ul-out">
+              <li data-list-text="(a)">
+                he recitals and schedules shall constitute an integral and
+                operative part of this Agreement;
+              </li>
+              <li data-list-text="(b)">
+                all references to agreements, documents or other instruments
+                include (subject to all relevant approvals) a reference to that
+                agreement, document or instrument as amended, supplemented,
+                substituted, novated or assigned from time to time;
+              </li>
+              <li data-list-text="(c)">
+                unless the context otherwise requires, the singular includes the
+                plural and vice versa;
+              </li>
+              <li data-list-text="(d)">
+                the words ‘hereof’, ‘herein’, and ‘hereto’ and words of similar
+                import when used with reference to a specific Clause in, or
+                Schedule to, this Agreement shall refer to such Clause in, or
+                Schedule to, this Agreement, and when used otherwise than in
+                connection with specific Clauses or Schedules, shall refer to
+                the Agreement as a whole;
+              </li>
+              <li data-list-text="(e)">
+                headings and the use of bold typeface shall be ignored in its
+                construction;
+              </li>
+              <li data-list-text="(f)">
+                a reference to a Clause or Schedule is, unless indicated to the
+                contrary, a reference to a clause or schedule to this Agreement;
+              </li>
+              <li data-list-text="(g)">
+                references to this Agreement shall be construed as references
+                also to any separate or independent stipulation or agreement
+                contained in it;
+              </li>
+              <li data-list-text="(h)">
+                the words “other”, “or otherwise” and “whatsoever” shall not be
+                construed ejusdem generis or be construed as any limitation upon
+                the generality of any preceding words or matters specifically
+                referred to;
+              </li>
+              <li data-list-text="(i)">
+                references to the word “includes” or “including” are to be
+                construed without limitation;
+              </li>
+              <li data-list-text="(j)">
+                words importing a particular gender include all genders;
+              </li>
+              <li data-list-text="(k)">
+                references to any law shall include references to such law as it
+                may, after the date of this Agreement, from time to time be
+                amended, supplemented or re-enacted;
+              </li>
+              <li data-list-text="(l)">
+                words and abbreviations, which have, well known technical or
+                trade/commercial meanings are used in the Agreement in
+                accordance with such meanings; and
+              </li>
+              <li data-list-text="(m)">
+                the rule of construction, if any, that a contract should be
+                interpreted against the parties responsible for the drafting and
+                preparation thereof, shall not apply.
+              </li>
+            </ol>
+          </li>
+          <li id="role" data-list-text="3.">
+            <p class="h1">ROLE OF THE COMPANY</p>
+            <ol class="margin-top ul-out">
+              <li data-list-text="3.1">
+                Notwithstanding anything contained in this Agreement, the
+                Company shall be entitled to take any such actions as it may
+                deem fit to protect the Bailed Gold. Any determination by the
+                Company in relation to the quantity, purity or other matters
+                relating to the Bailed Gold or the Rental shall be binding on
+                the Bailee.
+              </li>
+              <li data-list-text="3.2">
+                Any decision to provide the Bailed Gold to the Bailee shall be
+                at the sole discretion of the Company and the Company reserves
+                the right to not provide the Bailee with any Bailed Gold. At the
+                time of any Bailment of any Bailed Gold, the Company and the
+                Bailee shall execute the Gold Drawdown Notice, specifying the
+                terms of the Bailment of the Bailed Gold. It is clarified that
+                the Parties may execute one or more Gold Drawdown Notices during
+                the term of this Agreement for the Bailment of the Bailed Gold
+                from time to time. The Bailed Gold shall be provided as per the
+                terms specified in the Gold Drawdown Notice and which terms
+                shall form a part of this Agreement. The Bailed Gold shall be
+                delivered to the Bailee, as specified in the Gold Drawdown
+                Notice.
+              </li>
+            </ol>
+          </li>
+          <li id="term" data-list-text="4.">
+            <p class="h1">TERMS OF BAILMENT</p>
+            <ol class="margin-top ul-out">
+              <li data-list-text="4.1">
+                In consideration of the Bailment of the Bailed Gold, the Bailee
+                shall pay to the Company, the applicable Rental on the
+                applicable Rental Payment Dates. Rental, whether calculated on a
+                daily or monthly basis, will be payable daily or monthly and
+                will be computed using a basis of 365 (three hundred and
+                sixty-five) days a year and the actual number of days elapsed.
+                The Company’s determination regarding the payment and the
+                receipt of the Rental shall be final and binding on the Bailee.
+              </li>
+              <li data-list-text="4.2">
+                The Bailee further agrees to pay any fees and charges as
+                specified by the Company from time to time for the Bailment.
+              </li>
+              <li data-list-text="4.3">
+                The Bailee shall be entirely liable in relation to the Bailed
+                Gold and shall be responsible to safeguard the same. The Company
+                shall be entitled to inspect the storage and safeguard
+                requirements for the Bailed Gold, and the Bailee shall take
+                measures to safeguard the Bailed Gold as specified by the
+                Company from time to time. In case of any loss, damage,
+                pilferage of the Bailed Gold, the Bailee shall be entirely
+                responsible for the same and shall be required to entirely
+                compensate the Company for any such loss, damage, pilferage or
+                destruction. The Bailee shall also be responsible for obtaining
+                insurance for the Bailed Gold, as specified by the Company.
+              </li>
+              <li data-list-text="4.4">
+                Subject to the Gold Drawdown Notice, title to, and ownership of
+                the Bailed Gold shall not be transferred to the Bailee and the
+                Bailee is merely receiving the same for the purposes as
+                specified in this Agreement and a Gold Drawdown Notice.
+              </li>
+              <li data-list-text="4.5">
+                Bailee agrees that each Bailment in relation to Bailed Gold
+                shall be completed only after successful delivery of Bailed Gold
+                to the Company on the Repayment Date (or earlier in case of
+                termination of this Agreement), in form and substance acceptable
+                to the Company. The Bailee further agrees that in case of
+                Bailee’s default of returning the Bailed Gold or the failure to
+                pay any Rental, the Company shall be entitled to take all
+                measures to recover such Bailed Gold any unpaid Rental.
+              </li>
+              <li data-list-text="4.6">
+                Without prejudice to Clause 6 (Termination and consequences), in
+                case of any change in applicable laws, the Company reserves the
+                right to modify this Agreement and the arrangements contemplated
+                herein for the effective performance of this Agreement.
+              </li>
+              <li data-list-text="4.7">
+                The Company is not obligated to disclose to the Bailee or
+                provide any information to the Bailee to the origin and source
+                of the Bailed Gold or the terms of underlying contract entered
+                into between the Company and its customers or any other
+                information relating to the transaction entered into between the
+                Company and its customers.
+              </li>
+            </ol>
+          </li>
+          <li id="security" data-list-text="5.">
+            <p class="h1">SECURITY</p>
+            <ol class="margin-top ul-out">
+              <li data-list-text="5.1">
+                The Bailee agrees that at the time of the Bailment in terms of
+                any Gold Drawdown Notice, the Bailee shall deposit, in the bank
+                opened and maintained by the Company of its choice, an amount as
+                specified in the Gold Drawdown Notice of the currency value of
+                the Bailed Gold as on the date of such Gold Drawdown Notice, as
+                specified by the Company (“<span class="h1"
+                  >Security Deposit</span
+                >”).
+              </li>
+              <li data-list-text="5.2">
+                The Bailee shall take all steps and necessary action to create a
+                right of lien of the Security Deposit in the favour of the
+                Company and shall not deal with the same in any manner
+                whatsoever.
+              </li>
+              <li data-list-text="5.3">
+                The Parties agreed that after successful and satisfactory
+                consummation of the Bailment of any Bailed Gold and payment of
+                all applicable Rentals, the Security Deposit made by the Bailee
+                shall be returned back within 15 (fifteen) days for the return
+                of all the applicable Bailed Gold and the payment of the entire
+                amount of the Rental. The Company may appropriate all or any
+                part the Security Deposit in case of a breach of the terms of
+                this Agreement by the Bailee and the Bailee shall be obligated
+                to top-up such appropriated amount, within 5 (five) days of the
+                appropriation.
+              </li>
+              <li data-list-text="5.4">
+                In case of any additional security deposit, the Company shall
+                inform the Bailee in writing from time to time, which shall be
+                honoured by Bailee.
+              </li>
+            </ol>
+          </li>
+          <li id="cons" data-list-text="6.">
+            <p class="h1">TERMINATION AND CONSEQUENCES</p>
+            <ol class="margin-top ul-out">
+              <li data-list-text="6.1">
+                The Agreement shall be valid from the Execution Date unless
+                terminated by the Company. The Company may terminate this
+                Agreement with a prior written notice of 30 (thirty) days
+                without assigning any reason whatsoever.
+              </li>
+              <li data-list-text="6.2">
+                <p>
+                  Otherwise as provided in Clause 6.1, the Company reserves the
+                  right to terminate the Agreement for the following reasons:
+                </p>
+                <ol class="margin-top ul-out">
+                  <li data-list-text="6.2.1">
+                    Upon Bailee’s entry in RBI’s list of defaulters,
+                  </li>
+                  <li data-list-text="6.2.2">
+                    Upon Bailee’s failure to provide the Security Deposit in
+                    accordance with this Agreement;
+                  </li>
+                  <li data-list-text="6.2.3">
+                    Upon Bailee’s failure to pay any Rental on the Rental
+                    Payment Date or return the Bailed Gold on the Repayment
+                    Date;
+                  </li>
+                  <li data-list-text="6.2.4">
+                    Upon Bailee committing any breach of the terms of this
+                    Agreement;
+                  </li>
+                  <li data-list-text="6.2.5">
+                    Upon Bailee being under or part of any investigation
+                    relating to including but not limited to financial fraud,
+                    embezzlement and money laundering.
+                  </li>
+                  <li data-list-text="6.2.6">
+                    Upon Bailee declaring insolvency or being rendered incapable
+                    of paying its debts.
+                  </li>
+                  <li data-list-text="6.2.7">
+                    Upon the creditors of Bailee presenting by petition,
+                    application and other proceeding against him.
+                  </li>
+                  <li data-list-text="6.2.8">
+                    Upon Bailee being charged with crimes including but not
+                    limited to crimes relating financial fraud, embezzlement or
+                    money laundering.
+                  </li>
+                </ol>
+              </li>
+              <li data-list-text="6.3">
+                In the event of where this Agreement is terminated by the
+                Company due to any reasons mentioned herein, (a) the Bailee
+                shall (i) in case of termination pursuant to Clause 6.1 above,
+                on the applicable Repayment Date, and (ii) in case of
+                termination pursuant to Clause 6.2 above, within 3 (three) days
+                of termination, provide the Bailed Gold to the Company, (b) the
+                Bailee shall (i) in case of termination pursuant to Clause 6.1
+                above, on the applicable Rental Payment Dates till the return of
+                the Bailed Gold, and (ii) in case of termination pursuant to
+                Clause 6.2 above, within 3 (three) days of termination, pay the
+                unpaid Rental, (b) the Company will return the Security Deposit
+                in accordance with Clause 5 (Security), subject to any
+                adjustments.
+              </li>
+            </ol>
+          </li>
+          <li id="inden" data-list-text="7.">
+            <p class="h1">INDEMNIFICATION</p>
+            <br />
+            <p>
+              The Bailee shall indemnify, defend and hold harmless the Company
+              and its directors, shareholders, contractors, employees, staff,
+              agents, consultants and advisers (“
+              <span class="h1">Indemnified Parties</span>”) in full against all
+              costs, expenses, damages and losses, including any interest,
+              fines, legal and other professional fees and expenses awarded
+              against or incurred or paid by the Indemnified Parties, arising
+              out of, or in connection with:
+            </p>
+            <ol class="margin-top ul-out">
+              <li data-list-text="7.1">
+                the breach of the obligations, covenants, representations and
+                warranties of the Bailee under this Agreement;
+              </li>
+              <li data-list-text="7.2">
+                any loss, damage, destruction or pilferage of the Bailed Gold;
+              </li>
+              <li data-list-text="7.3">
+                any claims by any persons or third-parties in relation to the
+                Bailed Gold; and
+              </li>
+              <li data-list-text="7.4">
+                any claims by any governmental authorities in relation to the
+                Bailed Gold.
+              </li>
+            </ol>
+          </li>
+          <li id="warr" data-list-text="8.">
+            <p class="h1">REPRESENTATIONS AND WARRANTIES</p>
+            <br />
+            <p>
+              The Bailee represents and warrants that (which representations
+              will be deemed repeated on each date till all the Bailed Gold is
+              returned to the Company):
+            </p>
+            <ol class="margin-top ul-out">
+              <li data-list-text="8.1">
+                The Bailee free to enter into this Agreement without violation
+                of any agreement or restrictive condition that it may have with
+                any third party;
+              </li>
+              <li data-list-text="8.2">
+                The Bailee is not party to any other arrangement that shall
+                compromise its abilities to carry out its duties;
+              </li>
+              <li data-list-text="8.3">
+                The Bailee shall not enter into any arrangement which would
+                impose any obligations inconsistent with any terms of the
+                Agreement or which would restrict or conflict with the
+                performance of its obligations under this Agreement;
+              </li>
+              <li data-list-text="8.4">
+                All the information and documents provided by the Bailee is
+                accurate, complete and updated;
+              </li>
+              <li data-list-text="8.5">
+                The Bailee conducts its business in compliance with the
+                applicable laws and has not received any notice or other
+                communication from any court, tribunal, arbitrator, government
+                agencies and regulatory body;
+              </li>
+              <li data-list-text="8.6">
+                It has never, in the last 3 (three) years from the Execution
+                Date, appeared on the RBI’s list of defaulters;
+              </li>
+              <li data-list-text="8.7">
+                It is not currently under or part of any investigation relating
+                to including but not limited to financial fraud, embezzlement
+                and money laundering;
+              </li>
+              <li data-list-text="8.8">
+                It is not insolvent or incapable of paying its debts and none of
+                its creditors has presented by petition, application and other
+                proceeding against it for any administration order; and
+              </li>
+              <li data-list-text="8.9">
+                No order has been passed, no petition or application has been
+                presented, no resolution has been passed for the purpose of
+                winding up/insolvency whereby its assets are to be distributed
+                to the creditors or shareholders.
+              </li>
+            </ol>
+          </li>
+          <li id="law" data-list-text="9.">
+            <p class="h1">APPLICABLE LAW AND ARBITRATION</p>
+            <br />
+            <p>
+              This Agreement shall be governed by and construed and interpreted
+              in accordance with the laws of Republic of India. The Parties
+              shall use their best endeavour to settle amicably amongst
+              themselves any and all disputes arising out of or in connection
+              with this Agreement or the interpretation thereof. Sole arbitrator
+              appointed by the mutual consent of the Parties shall settle any
+              outstanding dispute in accordance with the Arbitration and
+              Conciliation Act 1996. The venue and seat for arbitration shall be
+              New Delhi and the language shall be English. The costs of the
+              arbitration proceedings shall be borne equally by the Parties.
+              However, each Party shall bear its own expenses in prosecuting or
+              defending its claim.
+            </p>
+          </li>
+          <li id="misc" data-list-text="10.">
+            <p class="h1">MISCELLANEOUS</p>
+            <ol class="margin-top ul-out">
+              <li data-list-text="10.1">
+                <span class="h1"> Relationship:</span>
+                Either Party is an independent contractor and is not the legal
+                representative or agent of the other Party for any purpose and
+                shall have no right or authority (except as expressly provided
+                in this Agreement) to create or attempt to assume or create any
+                obligation on behalf of or in the name of that Party. Nothing
+                contained in this Agreement shall be deemed to create any
+                partnership or joint venture relationship between the Parties.
+              </li>
+              <li data-list-text="10.2">
+                <span class="h1">Notice:</span>
+                Any notices or other communications required or permitted
+                hereunder shall be deemed to have been duly given within 1 (one)
+                business day by the Company when sent on the email address
+                provided by Bailee at the time of signing up on the Platform.
+              </li>
+              <li data-list-text="10.3">
+                <span class="h1">Complete Agreement:</span>
+                This Agreement supersedes any prior agreements, arrangements,
+                understandings, correspondence, memorandum and undertakings
+                between the Parties in relation to its subject matter and
+                together with Annexures constitutes the entire Agreement between
+                the Parties relating to the subject matter.
+              </li>
+              <li data-list-text="10.4">
+                <span class="h1"> Modifications and Amendments:</span>
+                No supplement, amendment, or modification of this Agreement
+                shall be binding unless it is in writing and signed by
+                authorized representative of both the Parties.
+              </li>
+              <li data-list-text="10.5">
+                <span class="h1"> Severability:</span>
+                If any part or provision of this Agreement shall be held
+                unlawful, rendered void or unenforceable, that provision shall
+                be severed, and the remainder of this Agreement shall remain in
+                effect.
+              </li>
+              <li data-list-text="10.6">
+                <span class="h1">Waiver:</span>
+                The failure of any Party to enforce or exercise, at any time or
+                for any period, any term of or any right arising pursuant to
+                this Agreement does not constitute, and shall not be construed
+                as, a waiver of such term or right and shall in no way affect
+                that Party's right to later enforce or exercise it. The waiver
+                by either Party of the breach of any provision of this Agreement
+                shall not constitute a waiver of the breach of any other
+                provision or of the subsequent breach of the same or any other
+                provision.
+              </li>
+              <li data-list-text="10.7">
+                <span class="h1"> Assignment: </span>
+                The Company shall be free to assign, directly or indirectly, all
+                or part of its rights or obligations under this Agreement
+                without the prior written consent of the Bailee or with a notice
+                to the Bailee.
+              </li>
+            </ol>
+          </li>
+        </ol>
+      </div>
+      <div class="page-break"></div>
+      <div style="margin-top: 40px">
+        <p id="sign" class="h1 center">SIGNATURE PAGES</p>
+        <p class="margin-top">
+          <strong>IN WITNESS WHEREOF</strong> the Parties have caused these
+          presents and the duplicate thereof to be executed by their authorized
+          official on the day, month and year first above written as
+          hereinbefore appearing.
+        </p>
+        <div style="margin-top: 50px">
+          <p class="margin-top">
+            <strong> SIGNED AND DELIVERED</strong> by the within named
+            <span> <%= [●] %></span>
+          </p>
+          <p class="">
+            <strong>PRIVATE LIMITED</strong> by the hand of its authorized
+            official
+          </p>
+          <p class="margin-top">
+            _____________________________________________
+          </p>
+        </div>
+
+        <div style="margin-top: 50px">
+          <p class="margin-top">
+            <strong> SIGNED AND DELIVERED</strong> by the within named
+            <span> <%= [●] %></span>
+          </p>
+          <p class="">
+            <strong>BKS MYGOLD PRIVATE LIMITED </strong> by the hand of its
+            authorized official
+          </p>
+          <p class="margin-top">
+            ________________________________________________
+          </p>
+        </div>
+      </div>
+      <div class="page-break"></div>
+      <div style="margin-top: 40px">
+        <p class="h1 center">SCHEDULE</p>
+        <br />
+        <p class="h1 center">FORMAT OF DRAWDOWN NOTICE</p>
+        <br />
+        <p class="h1" style="text-align: end">
+          Date: <span><%= 24/12/24 %></span>
+        </p>
+        <br />
+        <p>
+          With reference to the terms of the Bailment Agreement dated
+          <span class="h1"><%= [●] %></span>
+          (“<span class="h1">Agreement</span>”) entered into between BKS MyGold
+          Private Limited (“<span class="h1">Company</span>”) and
+          <span class="h1"><%= [●] %></span> (“
+          <span class="h1">Bailee</span>”), set out below are the terms of the
+          bailment, which shall form, a part of the Agreement:
+        </p>
+        <br />
+
+        <div>
+          <table>
+            <thead style="background-color: rgb(206, 203, 203)">
+              <tr class="h1">
+                <td>Term</td>
+                <td>Details</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Amount of Bailed Gold</td>
+                <td><span><%= [] %></span>gms</td>
+              </tr>
+              <tr>
+                <td>Date of delivery of the of the Bailed Gold</td>
+                <td><span><%= [] %></span>2024</td>
+              </tr>
+              <tr>
+                <td>Location for the delivery of the Bailed Gold</td>
+                <td>
+                  <span
+                    ><%= [[At the store of the Bailee located at [●]] ] %></span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Mode of delivery</td>
+                <
+                <td>
+                  <span
+                    ><%= [The Bailed Gold will be transported and delivered by
+                    the Company on or before the date of delivery at the
+                    specified location] %></span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Purpose of the bailment of the of the Bailed Gold</td>
+                <td><span><%= [Manufacture of jewellery] %></span></td>
+              </tr>
+              <tr>
+                <td>Repayment Date of the Bailed Gold</td>
+                <td>
+                  <span
+                    ><%= [Bailed Gold shall be returned on [●] 2024.] %></span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Rental rate</td>
+                <td>
+                  <span><%= [●] gms per 100 gms of gold %></span>
+                </td>
+              </tr>
+              <tr>
+                <td>Mode of payment of Rental</td>
+                <td>
+                  <span
+                    ><%= [By deposit of physical gold of an equivalent amount]
+                    %></span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Rental payment frequency</td>
+                <td>
+                  <span
+                    ><%= [monthly on the 7th day of each month] / [on the
+                    Repayment Date] %></span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Security Deposit</td>
+                <td>
+                  <span
+                    ><%= INR [●], being [110% of the value of the Bailed Gold
+                    provided on the date of this letter] %></span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>Mode of payment of the Security Deposit</td>
+                <td>
+                  <span
+                    ><%= [By provision of a bank guarantee] / [By deposit into
+                    the bank account of the Company with account number [●] with
+                    [●] bank.] %></span
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p class="h1">Agreed and accepted by:</p>
+                  <br />
+                  <br />
+                  <p>_____________________</p>
+                  <p>Authorized signatory</p>
+                  <p>[Insert name of the Company]</p>
+                </td>
+                <td>
+                  <p class="h1">Agreed and accepted by:</p>
+                  <br />
+                  <br />
+                  <p>_____________________</p>
+                  <p>Authorized signatory</p>
+                  <p>[Insert name of the Company]</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
