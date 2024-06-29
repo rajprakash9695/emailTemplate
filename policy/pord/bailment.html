@@ -25,21 +25,18 @@
       }
 
       ol li {
-        position: relative; /* Needed for the pseudo-element positioning */
-        padding-left: 35px; /* Space for the custom marker */
+        position: relative;
+        padding-left: 35px;
         margin-top: 20px;
         line-height: 18px;
       }
 
       ol li::before {
-        content: attr(
-          data-list-text
-        ); /* Use the data-list-text attribute for content */
-        position: absolute; /* Position the custom marker */
-        left: 0; /* Align the custom marker to the left */
+        content: attr(data-list-text);
+        position: absolute;
+        left: 0;
         top: 0;
-        color: black; /* Customize as needed */
-        /* font-weight: bold; Customize as needed */
+        color: black;
       }
     </style>
   </head>
