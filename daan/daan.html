@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        max-width: 400px;
+        margin: 0px auto;
+        height: 97vh;
+        padding: 15px 15px;
+        background: linear-gradient(335deg, #49153a 0%, #26184b 100%);
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+        position: relative;
+      }
+
+      .top-image {
+        object-fit: contain;
+        margin-top: 20px;
+      }
+
+      .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        bottom: 40px;
+      }
+
+      .btn {
+        outline: none;
+        background-color: #cda46a;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        min-width: 350px;
+        margin-top: 40px;
+        cursor: pointer;
+        color: white;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <img
+          src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/bg.png"
+          alt="top"
+          width="100%"
+          class="top-image"
+        />
+        <div class="bottom">
+          <img
+            src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/mygold.png"
+            alt="top"
+            width="180px"
+          />
+          <a href="#">
+            <button class="btn">Continue to App</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
