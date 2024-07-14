@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Retailer On-boarding Agreement</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        max-width: 800px;
+        margin: 30px 10px;
+        padding: 10px;
+        font-size: 14px;
+      }
+
+      .container {
+        background-image: linear-gradient(
+          142.47deg,
+          #251f62 -2.91%,
+          #541343 104.12%
+        );
+        padding: 20px;
+      }
+
+      .main {
+        padding: 10px;
+        border-radius: 10px;
+        background-color: #d1ae51;
+      }
+
+      .main2 {
+        padding: 50px;
+        background-color: #fef0fa;
+        border-radius: 10px;
+      }
+
+      .head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .head > p {
+        font-size: 40px;
+        font-weight: 600;
+        line-height: 50px;
+      }
+      .head > img {
+        height: 70px;
+      }
+      .para {
+        margin: 40px 0px 40px 0px;
+      }
+      .mid {
+        margin-top: 20px;
+      }
+
+      .data {
+        gap: 40px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+
+      .data-item {
+        margin-bottom: 20px;
+      }
+      .data-value {
+        margin-bottom: 18px;
+      }
+
+      .h1 {
+        font-weight: 600;
+      }
+      .center {
+        text-align: center;
+      }
+      .margin-top {
+        margin-top: 15px;
+      }
+
+      .text {
+        font-size: 16px;
+      }
+
+      .to {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 30px;
+        border: 1px solid black;
+      }
+
+      th,
+      td {
+        padding: 6px;
+        border: 1px solid black;
+      }
+
+      th {
+        background-color: #ededed;
+      }
+
+      .ul-out {
+        list-style-position: outside;
+      }
+
+      /* style */
+      ol {
+        list-style: none;
+        padding-left: 0px;
+      }
+
+      ol li {
+        position: relative; /* Needed for the pseudo-element positioning */
+        padding-left: 35px; /* Space for the custom marker */
+        margin-top: 20px;
+        font-size: 14px;
+        line-height: 18px;
+      }
+
+      ol li::before {
+        content: attr(
+          data-list-text
+        ); /* Use the data-list-text attribute for content */
+        position: absolute; /* Position the custom marker */
+        left: 0; /* Align the custom marker to the left */
+        top: 0;
+        color: black; /* Customize as needed */
+        font-weight: bold; /* Customize as needed */
+      }
+
+      .page-break {
+        page-break-before: always;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <div class="container-main">
+          <div class="container">
+            <div class="main">
+              <div class="main2">
+                <div class="head">
+                  <p style="color: #431546">
+                    Certificate of <br />
+                    Custody
+                  </p>
+                  <img
+                    src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mygold.png"
+                    alt="mygold"
+                  />
+                </div>
+                <div class="para">
+                  <p
+                    style="text-align: center; font-weight: 600; color: #310c27"
+                  >
+                    This document confirms the safekeeping and custody of
+                    <br />
+                    your precious Gold from our trusted Gold Storage Partner
+                  </p>
+                  <p style="text-align: center; margin-top: 15px">
+                    *Terms of Bailment apply
+                  </p>
+                </div>
+                <div class="mid">
+                  <div class="data">
+                    <div>
+                      <p class="data-item">Name of the Customer</p>
+
+                      <p class="data-item">Weight of the Gold (gm)</p>
+
+                      <p class="data-item">Date of Custody Taken</p>
+                    </div>
+                    <div>
+                      <div
+                        class="data-value"
+                        style="width: 200px; border-bottom: 2px dashed black"
+                      >
+                        <p><%= name %></p>
+                      </div>
+                      <div
+                        class="data-value"
+                        style="width: 200px; border-bottom: 2px dashed black"
+                      >
+                        <p><%= quantity %></p>
+                      </div>
+                      <div
+                        class="data-value"
+                        style="width: 200px; border-bottom: 2px dashed black"
+                      >
+                        <p><%= date %></p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="data" style="margin-top: 40px">
+                  <img
+                    src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/partners.png"
+                    alt=""
+                    width="450px"
+                  />
+                </div>
+                <p
+                  style="
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: 600;
+                    margin-top: 30px;
+                  "
+                >
+                  Certificate Number: <span><%= certificateNumber ></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <% if (isLeased) { %>
+      <div class="page-break"></div>
+      <div>
+        <h2
+          class="margin-top"
+          style="text-align: center; margin-top: 30px"
+        ></h2>
+        <div class="to" style="line-height: 20px">
+          <div>
+            <p>To</p>
+            <p class="h1"><%= name %></p>
+            <p>Email: <span class="h1"><%= email %></span></p>
+          </div>
+          <div>
+            <p>Date: <span class="h1"><%= date %></span></p>
+          </div>
+        </div>
+        <p class="h1 margin-top">
+          Sub <span>Confirmation of receipt of gold </span>
+        </p>
+        <p class="margin-top">Dear <span><%= name %></span></p>
+        <p class="margin-top">
+          Please see below the details of the gold received and the terms of
+          receipt, rental and other applicable terms:
+        </p>
+        <table>
+          <thead>
+            <tr style="background-color: rgb(196, 193, 193); font-weight: 600">
+              <td>Term</td>
+              <td>Details</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Customer</td>
+              <td><span><%= name %></span></td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td><span><%= email %></span></td>
+            </tr>
+            <tr>
+              <td>Unique Receipt Number</td>
+              <td><span><%= receiptNumber %></span></td>
+            </tr>
+            <tr>
+              <td>Gold received <span class="h1">('Customer Gold')</span></td>
+              <td><span><%= quantity %> gm of 24 karat gold</span></td>
+            </tr>
+            <tr>
+              <td>Date of Bailment of Gold</td>
+              <td><span><%= date %></span></td>
+            </tr>
+            <tr>
+              <td>Bailment Period</td>
+              <td>
+                <ol class="margin-top ul-out">
+                  <li data-list-text="(1)">
+                    (one) year from the date hereof, and for continuous periods
+                    of 1 (one) year thereafter.
+                  </li>
+                </ol>
+              </td>
+            </tr>
+            <tr>
+              <td>Rental rate</td>
+              <td>
+                <span><%= interestPercentage %></span> gms per 100 gms of gold ,
+                compounded annually
+              </td>
+            </tr>
+            <tr>
+              <td>Mode of payment of Rental</td>
+              <td>By credit of Digital Gold to the Customer.</td>
+            </tr>
+            <tr>
+              <td>Redemption of Rental and the Bailed Gold</td>
+              <td>
+                <ol class="margin-top ul-out">
+                  <li data-list-text="(1)">
+                    Purchase of gold jewellery / objects on the Platform;
+                  </li>
+                  <li data-list-text="(2)">
+                    Towards purchase of gold coins of MMTC Limited;
+                  </li>
+                  <li data-list-text="(3)">By purchase of gold bar;</li>
+                  <li data-list-text="(4)">
+                    In form of cash by sale of the Bailed Gold and the Rental,
+                    based on the then-applicable price.
+                  </li>
+                </ol>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="margin-top">
+          Comprehensive terms and conditions governing the gold provided by you
+          is provided in the Annexure
+          <span class="h1">(“Bailment Terms”)</span> .
+        </p>
+        <p class="margin-top">For BKS MyVault Private Limited</p>
+        <div>
+          <p class="margin-top h1">
+            This is an electronically system generated document, no signature is
+            required
+          </p>
+        </div>
+        <div class="page-break"></div>
+        <div class="margin-top">
+          <h2 style="text-align: center">ANNEXURE</h2>
+          <ol class="margin-top ul-out">
+            <li data-list-text="1.">
+              <p class="h1">DEFINITIONS</p>
+
+              <p class="margin-top">
+                The following words and expressions shall, except where the
+                context otherwise requires, have the following meanings
+                respectively:
+              </p>
+              <p class="margin-top">
+                <span class="h1"> “Bailment Service”</span> means the service of
+                the bailment provided by the Company for which the Customer
+                shall be paid the Rental;
+              </p>
+              <p class="margin-top">
+                <span class="h1"> “Bailed Gold”</span> means 24 karat gold, held
+                in physical form, obtained pursuant to refining and assaying of
+                the Customer Gold;
+              </p>
+              <p class="margin-top">
+                <span class="h1">“Digital Gold”</span> shall mean the notional
+                gold credited to the Customer on the Platform as the Rental from
+                Bailment Services;
+              </p>
+              <p class="margin-top">
+                <span class="h1">“Partner(s)”</span> shall refer to any Platform
+                partner to which the Company provides the Bailed Gold of the
+                Customer on a sub-bailment;
+              </p>
+              <p class="margin-top">
+                <span class="h1">“Platform”</span> shall mean the website
+                located in the internet domain of www.bksmygold.com or any
+                associated software or mobile application along with all
+                upgrades, enhancement, modification which is owned and operated
+                by BKS MyGold Private Limited;
+              </p>
+              <p class="margin-top">
+                <span class="h1"> “Rental”</span> shall mean the rent payable to
+                the Customer by the Company for the Bailed Gold provided under
+                the Bailment Service, in the form of Digital Gold, pursuant to
+                the bailment of the Bailed Gold.
+              </p>
+            </li>
+            <li data-list-text="2.">
+              <p class="h1">PROVISIONS OF BAILMENT SERVICES</p>
+              <ol class="margin-top ul-out">
+                <li data-list-text="2.1">
+                  The Company shall receive the Physical Gold of the Customer on
+                  a bailment basis pursuant to the Bailment Services for the
+                  Bailment Period. Company reserves the right to aggregate the
+                  Bailed Gold collected from the Customer with similar physical
+                  gold collected from other customers on its Platform, for
+                  Bailment Services. The Company is authorized to provide the
+                  Bailed Gold as a sub-bailment to the Partners and the Company
+                  is authorized to take all steps as it deems fit in relation to
+                  the Bailed Gold. Title to, and ownership of, the Bailed Gold
+                  shall at all times be vested in and retained by the Customer,
+                  subject to the rights granted to the Company under these
+                  Bailment Terms
+                </li>
+                <li data-list-text="2.2">
+                  Customer authorizes the Company to accept, transport, store,
+                  receive and deliver the Customer Gold. On the availing of the
+                  Bailment Service, the Company shall (or through another
+                </li>
+                <li data-list-text="2.3">
+                  The Verifier Partner shall determine the purity of the
+                  Customer Gold provided by the Customer for determination of
+                  the Bailed Gold, which may include but not limited to melting,
+                  consolidation, division, conversion and chemical alteration of
+                  such Customer Gold. The Company has an irrevocable right to
+                  undertake and to allow any such process which may be required
+                  and agrees that such process shall be irreversible in nature.
+                  In case the Customer provides any jewellery, artifacts or
+                  objects made of gold, the same shall not be returned or
+                  replaced in any event whatsoever.
+                </li>
+                <li data-list-text="2.4">
+                  Pursuant to determination of pure quantity of the Bailed Gold,
+                  such quantity shall be considered final for the purpose of
+                  Bailment Services, under which the Company shall, on behalf of
+                  the Customer.
+                </li>
+                <li data-list-text="2.5">
+                  The Company shall have no obligation to facilitate any
+                  provision of Physical Gold on a bailment basis or accept any
+                  Customer Gold and shall have complete discretion to refuse any
+                  request for provision of Physical Gold on a bailment basis or
+                  accept any Customer Gold made by time by the Customer at any
+                  time without giving any reason for such refusal and shall
+                  incur no liability in respect of any such refusal. The Company
+                  reserves the right to return any Physical Gold to the
+                  Customer.
+                </li>
+              </ol>
+            </li>
+            <li data-list-text="3.">
+              <p class="h1">USE OF BAILMENT SERVICES</p>
+              <ol class="margin-top ul-out">
+                <li data-list-text="3.1">
+                  The Customer represents that it has good title over the
+                  Customer Gold and is entitled to avail of the Bailment
+                  Services. On the termination or completion of the Bailment
+                  Service, the Customer may redeem or receive the Bailed Gold
+                  and the applicable rental, as specified in this letter. During
+                  the Bailment Period, the Company is not obligated to honour
+                  any redemption or termination request for the Bailed Gold
+                  including any applicable Rental prior to the end of the
+                  Bailment Period. This is without prejudice to Company right at
+                  any time to cancel the Bailment Service and return the
+                  Customer Gold back to the Customer, for any reason whatsoever,
+                  including on account of the instructions of any governmental
+                  authority.
+                </li>
+                <li data-list-text="3.2">
+                  Without prejudice to Clause 6 <i>(Termination)</i> , in case
+                  of a change in applicable laws, the Company reserves the right
+                  to modify these Bailment Terms and the arrangements
+                  contemplated herein for the effective performance.
+                </li>
+              </ol>
+            </li>
+            <li data-list-text="4.">
+              <p class="h1">CALCULATION OF RENT AND WITHDRAWAL</p>
+              <ol class="margin-top ul-out">
+                <li data-list-text="4.1">
+                  Customer will be paid the Rental on the Bailed Gold as Digital
+                  Gold at the rate of Rental as specified, subject to the
+                  Customer’s compliance with the terms of this Letter.
+                </li>
+                <li data-list-text="4.2">
+                  The Bailment Service for any Bailed Gold shall be for the
+                  specified fixed term as being the Bailment Period.
+                </li>
+                <li data-list-text="4.3">
+                  The Rental payable on the Bailed Gold shall be received in the
+                  relevant grams of Digital Gold, which shall be credited and
+                  reflected on the Platform.
+                </li>
+                <li data-list-text="4.4">
+                  In case the Customer seeks the return of any Bailed Gold (or
+                  applicable Rental in the form of physical gold) prior to the
+                  end of the Bailment Period, the Company is not obligated to
+                  honour any such request for redemption or return. Any such
+                  return may be subject to charges, penalties, terms and
+                  limitation as specified by the Company.
+                </li>
+                <li data-list-text="4.5">
+                  The Company is not obligated to disclose to the Customer or
+                  provide any information to the Customer on the terms of the
+                  sub-bailment executed with the Partners or any other
+                  information relating to the transactions entered into between
+                  the Company and the Partners.
+                </li>
+                <li data-list-text="4.6">
+                  At the conclusion of the Bailment Period, the Bailed Gold and
+                  the applicable Rental may be received or redeemed as set out
+                  in the Letter.
+                </li>
+              </ol>
+            </li>
+
+            <li data-list-text="5.">
+              <p class="h1">HOLD HARMLESS</p>
+              <ol class="margin-top ul-out">
+                <li data-list-text="5.1">
+                  Customer hereby releases and agrees to hold harmless Company
+                  and its respective affiliates/group companies, its directors,
+                  officers, employees, agents, successors, advisors,
+                  consultants, representatives, and assigns from any and all
+                  claims, losses, related suits, actions, proceedings,
+                  investigations, judgments, deficiencies, damages, settlements,
+                  liabilities, reasonable legal fees and expenses incurred, due
+                  to acts and omissions of the Customer.
+                </li>
+                <li data-list-text="5.2">
+                  The Customer understands and agrees that the Bailment Services
+                  is at present not regulated by any applicable law and there
+                  are no specific guidelines regulating the same by the Reserve
+                  Bank of India (“RBI”) and/or any other regulatory authority.
+                  The Customer understands and agrees that, if any introduction
+                  or change in the interpretation of any applicable law issued
+                  by RBI or any other governmental authority (“Change in Law”)
+                  (a) affects the Customer, the Company or the Partner directly
+                  or indirectly, including without limitation, with respect to
+                  (i) increasing the cost to the Company or the Partner of
+                  performing its obligations hereunder; (ii) reducing any amount
+                  received or receivable by the Customer; or (iii) changes the
+                  effective return of the Bailed Gold to be received by the
+                  Customer; or (b) makes it illegal for the Customer to provide
+                  the Bailed Gold on a bailment basis or otherwise deal in
+                  Bailed Gold or Customer Gold or it becomes illegal for the
+                  Partner to avail the bailment from the Company, then the
+                  Company may in its sole discretion, terminate this engagement
+                  and this Letter, including any engagement with the Partners
+                  and return the Bailed Gold or equivalent value. The Customer
+                  acknowledges and understand that any loss suffered by the
+                  Customer pursuant to such Change in Law shall be at the
+                  Customer’s sole risk.
+                </li>
+              </ol>
+            </li>
+
+            <li data-list-text="6.">
+              <p class="h1">TERMINATION AND CONSEQUENCES</p>
+              <ol class="margin-top ul-out">
+                <li data-list-text="6.1">
+                  These Bailment Terms shall be valid from the date specified
+                  herein unless terminated by the Company. The Company may
+                  terminate this letter or any Bailment Service with a prior
+                  written notice of 30 (thirty) days without assigning any
+                  reason whatsoever.
+                </li>
+                <li data-list-text="6.2">
+                  The Bailment Service can be terminated by the Company
+                  forthwith for the following reasons:
+                  <ol class="margin-top ul-out">
+                    <li data-list-text="6.2.1">
+                      Upon failure of Customers to perform any of its
+                      obligations;
+                    </li>
+                    <li data-list-text="6.2.2">
+                      Upon failure of the Customer to adhere to the terms of use
+                      and policies of the Platform;
+                    </li>
+                    <li data-list-text="6.2.3">
+                      Upon Customer being under or part of any investigation
+                      relating to including but not limited to financial fraud,
+                      embezzlement and money laundering;
+                    </li>
+                    <li data-list-text="6.2.4">
+                      Upon Customer declaring insolvency or being rendered
+                      incapable of paying its debts;
+                    </li>
+                    <li data-list-text="6.2.5">
+                      In case of a change in applicable law which requires the
+                      Company to terminate this Bailment Service;
+                    </li>
+                    <li data-list-text="6.2.6">
+                      In case the Physical Gold is subject to any legal
+                      proceedings, encumbrances or any other claim which would
+                      impair the performance of the Bailment Terms;
+                    </li>
+                    <li data-list-text="6.2.7">
+                      In case the performance of this Bailment Service becomes
+                      materially onerous for the Company;
+                    </li>
+                    <li data-list-text="6.2.8">
+                      Upon the creditors of Customer presenting by petition,
+                      application and other proceeding against him; and
+                    </li>
+                    <li data-list-text="6.2.9">
+                      Upon Customer being charged with crimes including but not
+                      limited to crimes relating financial fraud, embezzlement
+                      or money laundering.
+                    </li>
+                  </ol>
+                </li>
+                <li data-list-text="6.3">
+                  Upon the termination of the Bailment Service by the Company,
+                  the Company shall promptly take all measures for the Customer
+                  to be able to receive the Bailed Gold (and any applicable
+                  Rental), subject to the recovery of such Bailed Gold (and any
+                  applicable Rental) pursuant to the sub-bailment to the
+                  Partner.
+                </li>
+              </ol>
+            </li>
+            <li data-list-text="7.">
+              <p class="h1">APPLICABLE LAW AND ARBITRATION</p>
+              <p class="margin-top">
+                This Bailment Terms shall be governed by and construed and
+                interpreted in accordance with the laws of Republic of India.
+                The Parties shall use their best endeavour to settle amicably
+                amongst themselves any and all disputes arising out of or in
+                connection with these Bailment Terms or the interpretation
+                thereof. Sole arbitrator appointed by the mutual consent of the
+                Parties shall settle any outstanding dispute in accordance with
+                the Arbitration and Conciliation Act 1996. The venue and seat
+                for arbitration shall be New Delhi and the language shall be
+                English. The costs of the arbitration proceedings shall be borne
+                equally by the Parties. However, each Party shall bear its own
+                expenses in prosecuting or defending its claim. In the event of
+                claim by a Party being frivolous, substantially or without merit
+                such Party shall reimburse the cost of the other Party.
+              </p>
+            </li>
+            <li data-list-text="8.">
+              <p class="h1">MISCELLANEOUS</p>
+              <ol class="margin-top ul-out">
+                <li data-list-text="8.1">
+                  <span class="h1">Notice:</span>
+                  Any notices or other communications required or permitted
+                  hereunder shall be deemed to have been duly given within 1
+                  (one) business day when sent on the email address provided by
+                  Customer at the time of signing up on the Platform.
+                </li>
+                <li data-list-text="8.2">
+                  <span class="h1"> Modifications and Amendments:</span>
+                  Save as specified under these Bailment Terms, any supplement,
+                  amendment, or modification of these Bailment Terms shall be
+                  binding on the Customer.
+                </li>
+                <li data-list-text="8.3">
+                  <span class="h1"> Assignment:</span>
+                  The Company shall have the right to assign, directly or
+                  indirectly, all or part of its rights or obligations under
+                  these Bailment Terms without requiring any consent or approval
+                  of the Customer.
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <% } %>
+    </div>
+  </body>
+</html>

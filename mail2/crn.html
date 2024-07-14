@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Customer Relation Number (CRN) has been generated successfully
+    </title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0;
+      }
+      body {
+        border: 1px solid black;
+        margin: 0px auto;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+      }
+      .container {
+        border: 1px solid black;
+        padding: 5px;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .headerImg {
+        text-align: center;
+        margin: 10px auto;
+        padding: 12px 10px;
+      }
+      .para {
+        max-width: 400px;
+        line-height: 18px;
+        font-size: 12px;
+        margin: 10px auto;
+      }
+
+      .main {
+        padding: 10px 10px;
+      }
+
+      .header {
+        text-align: center;
+        margin: 10px auto;
+        padding: 12px 10px;
+        border: 1px solid #ffdbf3;
+        border-radius: 10px;
+        background-color: #fff8fd;
+        font-size: 14px;
+        position: relative;
+        overflow: hidden;
+      }
+      .header > img {
+        margin-bottom: 10px;
+      }
+      .font {
+        font-weight: 700;
+      }
+      .cong {
+        font-size: 22px;
+        margin: 10px 0px;
+        color: #14c082;
+      }
+      .sona {
+        font-size: 16px;
+        margin-top: 10px;
+        color: black;
+      }
+
+      .purchase {
+        margin-top: 20px;
+        padding: 10px 10px;
+        border: 1px solid #ffdbf3;
+        border-radius: 10px;
+        background-color: #fff8fd;
+        font-size: 13px;
+      }
+      .purchase > p {
+        font-weight: 600;
+      }
+      .hr {
+        margin: 10px 0px;
+        border: 0.8px solid #ffdbf3;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 12px;
+      }
+
+      td {
+        padding: 5px 0px;
+      }
+      .btn {
+        padding: 8px 20px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 700;
+        background-color: #361443;
+        color: white;
+      }
+      .gray {
+        color: gray;
+      }
+      .partner {
+        display: flex;
+        justify-content: center;
+        margin: 0px 0px 20px 0px;
+        padding: 5px 5px;
+      }
+      .partner > img {
+        width: 100%;
+      }
+
+      .banner > img {
+        width: 100%;
+        margin: 10px auto;
+      }
+      .footer {
+        text-align: center;
+      }
+      .social {
+        margin: 15px auto;
+      }
+
+      .social img {
+        height: 30px;
+        margin: 0px 10px 0px 10px;
+      }
+
+      .line {
+        height: 12px;
+        background-color: #f3f3f3;
+      }
+      .footer {
+        /* border: 1px solid black; */
+        background-color: white !important;
+        padding: 20px 10px;
+      }
+      .bks {
+        background-color: #f3f3f3;
+        padding: 20px 20px;
+        font-size: 14px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="main">
+        <div>
+          <div class="headerImg">
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/mygold.png"
+              alt="mygold"
+              width="120"
+            />
+          </div>
+          <div class="header font">
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/crn.png"
+              alt=""
+              width="100px"
+            />
+            <p>Dear <span><%= data.name %></span></p>
+            <p class="para">
+              Your Customer Relation Number (CRN) has been generated
+              successfully
+            </p>
+
+            <hr class="hr" />
+            <p
+              class="para"
+              style="text-align: left; color: black; font-size: 14px"
+            >
+              How to open your CRN PDF ?
+            </p>
+
+            <p class="para" style="text-align: left; color: gray">
+              Your password is the combination of four letters of your name in
+              UPPER CASE (as it appears on your profile. Ignore spaces, if any)
+              and date of birth in DDMM format
+            </p>
+
+            <p
+              class="para"
+              style="text-align: left; color: black; font-size: 14px"
+            >
+              For Example:
+            </p>
+            <div style="margin: 10px 0px; font-size: 12px">
+              <p style="color: gray">
+                First 4 characters of name (Oppenheimer)
+              </p>
+              <p style="margin-bottom: 10px; font-size: 13px">OPPE</p>
+              <p style="color: gray">4 digits of DOB (22 April)</p>
+              <p style="margin-bottom: 10px; font-size: 13px">2204</p>
+              <p style="color: gray">Your Combined password</p>
+              <p style="margin-bottom: 10px; font-size: 13px">OPPE2204</p>
+            </div>
+
+            <p
+              class="para"
+              style="
+                color: white;
+                background-color: #431546;
+                margin-top: 15px;
+                padding: 4px;
+                border-radius: 8px;
+              "
+            >
+              Do not share this CRN with anyone for security reasons.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="main">
+          <div class="partner">
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/partner.png"
+              alt="partner"
+            />
+          </div>
+          <div class="banner">
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/upload.png"
+              alt="banner"
+            />
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/gold-saving-plan.png"
+              alt="banner"
+            />
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/refer-earn.png"
+              alt="banner"
+            />
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/sell-old-gold.png"
+              alt="banner"
+            />
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/sell-reserve.png"
+              alt="banner"
+            />
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/gift.png"
+              alt="banner"
+            />
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/ecom.png"
+              alt="banner"
+            />
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="footer">
+          <p style="font-weight: 900; font-size: 16px">Follow Us</p>
+          <div class="social">
+            <a
+              href="https://www.facebook.com/people/MyGoldbks/100090106620734/"
+              target="_blank"
+            >
+              <img
+                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/facebook.png"
+                alt="facebook"
+            /></a>
+            <a href="https://x.com/MyGoldHQ" target="_blank">
+              <img
+                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/twitter.png"
+                alt="twitter"
+            /></a>
+            <a href="https://www.instagram.com/mygold_app/" target="_blank">
+              <img
+                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/instagram.png"
+                alt="instagram"
+            /></a>
+            <a
+              href="https://www.linkedin.com/company/bksmygold/mycompany/verification/"
+              target="_blank"
+            >
+              <img
+                src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/linkdin.png"
+                alt="linkdin"
+            /></a>
+          </div>
+          <p style="font-size: 14px; font-weight: 700">Have Question?</p>
+          <p style="font-size: 12px; margin: 10px auto">
+            Feel free to write to us at
+            <span
+              ><a href="mailto:help@bksgold.com" style="color: black"
+                >help@bksgold.com</a
+              ></span
+            >
+          </p>
+          <p style="margin-top: 15px">
+            <a style="color: black" href="https://bksmygold.com/"
+              >www.bksmygold.com</a
+            >
+          </p>
+        </div>
+        <p class="bks">BKS MYGOLD PRIVATE LIMITED</p>
+      </div>
+    </div>
+  </body>
+</html>
