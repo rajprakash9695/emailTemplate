@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Release Gold</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-size: 12px;
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .header,
+      .header2,
+      .footer,
+      .footer1 {
+        margin-bottom: 20px;
+      }
+
+      .header,
+      .footer1 {
+        gap: 5px;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .header2 {
+        line-height: 1.5;
+      }
+
+      .span1 {
+        font-weight: 600;
+      }
+
+      .head {
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+
+      th,
+      td {
+        padding: 10px 14px;
+        font-size: 10px;
+      }
+
+      .footer {
+        display: flex;
+        justify-content: center;
+      }
+
+      .hr {
+        border: dotted 0.05px;
+        border-color: #e7d4d4;
+      }
+
+      .declaration,
+      .registered-address {
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      .declaration span,
+      .registered-address span {
+        font-weight: 600;
+      }
+
+      img {
+        vertical-align: middle;
+      }
+
+      .text-color {
+        color: gray;
+        font-size: 10px;
+      }
+
+      .blackText {
+        color: black;
+      }
+      .text-color > span {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header" style="margin-top: -20px">
+        <div>
+          <p class="head">Invoice Against Release of Gold</p>
+          <div class="header2">
+            <p class="text-color">
+              Order N0.:
+              <span class="span1">2456454685765845</span>
+            </p>
+            <p class="text-color">
+              Date: <span class="span1">07/12/2023</span>
+            </p>
+          </div>
+        </div>
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 25px;
+          "
+        >
+          <div>
+            <p class="head">Original - Customer Copy</p>
+            <img
+              src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/logos/myvault.png"
+              alt="mgold"
+              width="90px"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="header" style="margin-top: -60px">
+        <div>
+          <p class="head">Seller Details</p>
+          <div class="header2">
+            <p style="color: black">BKS MyVault Private Limited</p>
+            <p class="text-color" style="max-width: 12rem">
+              M-13 Gole Market, Mahanagar, Lucknow, Uttar Pradesh - 220209
+            </p>
+            <p class="text-color">
+              PAN No.: <span class="span1"><%= from.pan %></span>
+            </p>
+            <p class="text-color">
+              GSTIN: <span class="span1"><%= from.gst %></span>
+            </p>
+            <p class="text-color">
+              CIN No.: <span class="span1"><%= from.cin %></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top: -20px" class="head">Bill To</p>
+      <div class="header">
+        <div style="line-height: 14px">
+          <p class="text-color">
+            Name: <span class="span1"><%= from.gst %></span>
+          </p>
+          <p class="text-color">
+            Phone Number: <span class="span1"><%= from.cin %></span>
+          </p>
+          <p class="text-color">
+            Email Id: <span class="span1"><%= from.gst %></span>
+          </p>
+        </div>
+        <div style="padding-right: 80px; line-height: 14px">
+          <p style="margin-top: -20px" class="head">Deliver To</p>
+          <p class="text-color">
+            <span class="span1"><%= to.name %></span>
+          </p>
+          <p class="text-color" style="max-width: 12rem"><%= to.address %></p>
+        </div>
+      </div>
+
+      <table>
+        <thead style="background-color: #ededed">
+          <tr>
+            <th align="left">Product Name</th>
+            <th align="left">Purity</th>
+            <th align="left">Quantity</th>
+            <th align="right">Total Weight Gram</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th align="left">
+              <p>1. <span><%= 10 %></span> gm Gold Ingot/Coiin</p>
+              <p style="margin-top: 2px">
+                (HSN Code <span><%= hsn.code %></span> )
+              </p>
+            </th>
+            <th align="left"><%= purity %></th>
+            <th align="left"><%= 1 %></th>
+            <th align="right"><%= 10.00 %> gm</th>
+          </tr>
+          <tr>
+            <th align="left">
+              <p>2. <span><%= 10 %></span> gm Gold Ingot/Coiin</p>
+              <p style="margin-top: 2px">
+                (HSN Code <span><%= hsn.code %></span> )
+              </p>
+            </th>
+            <th align="left"><%= purity %></th>
+            <th align="left"><%= 1 %></th>
+            <th align="right"><%= 10.00 %> gm</th>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="hr" />
+
+      <table class="blackText">
+        <tbody>
+          <tr>
+            <td align="left">
+              <p style="font-size: 10px; font-weight: 600">Total</p>
+            </td>
+            <td align=""></td>
+            <td align="left"><%= quantity %></td>
+            <td align="right" class="blackText"><%= 20.00 %>gm</td>
+          </tr>
+          <tr>
+            <td align="left">
+              <p style="font-size: 10px; font-weight: 600">
+                Total 24KT Gold Weight Released from MyGold Bank
+              </p>
+            </td>
+            <td align="right"></td>
+            <td align="right"></td>
+            <td align="right"><%= 20 %> gm</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="hr" />
+
+      <table>
+        <tbody>
+          <tr class="blackText" style="font-size: 10px; font-weight: 600">
+            <td align="left">
+              <p>Total 24KT Gold Weight Difference</p>
+            </td>
+            <td align=""></td>
+            <td align="left"></td>
+            <td align="right" class="blackText"><%= difference %> gm</td>
+          </tr>
+          <tr>
+            <td align="left">
+              <p style="font-size: 10px; font-weight: 600">Gold Buy Rate/gm</p>
+            </td>
+            <td align=""></td>
+            <td align="left"></td>
+            <td align="right" class="blackText">₹ <%= rate %></td>
+          </tr>
+          <tr>
+            <td align="left">
+              <p style="font-size: 10px; font-weight: 600">Gold Value</p>
+            </td>
+            <td align=""></td>
+            <td align="left"></td>
+            <td align="right" class="blackText">₹ <%= value %></td>
+          </tr>
+          <tr>
+            <td align="left">
+              <p style="font-size: 10px; font-weight: 600">Making Charges</p>
+            </td>
+            <td align=""></td>
+            <td align="left"></td>
+            <td align="right" class="blackText">₹ <%= makingCharges %></td>
+          </tr>
+          <tr>
+            <td align="left">
+              <p style="font-size: 10px; font-weight: 600">GST @3%</p>
+            </td>
+            <td align=""></td>
+            <td align="left"></td>
+            <td align="right" class="blackText">₹ <%= gst %></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="hr" />
+
+      <table class="blackText">
+        <tbody>
+          <tr>
+            <td align="left">
+              <div class="span1">
+                <p style="margin-bottom: 6px">Total Amount</p>
+                <p>
+                  Total Amount In Words:
+                  <span>₹ <%= words %></span>
+                </p>
+              </div>
+            </td>
+            <td align="right">
+              <p class="span1" style="margin-top: -18px">₹ <%= 127.77 %></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <hr class="hr" />
+      <table>
+        <tbody>
+          <tr>
+            <td align="left">
+              <div>
+                <p class="head blackText">Payment Details</p>
+                <p>Mode Of Payment</p>
+              </div>
+            </td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="center"></td>
+            <td align="right">
+              <p class="span1" style="margin-top: 25px">₹ <%= mode %></p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <hr class="hr" />
+      <div
+        class="footer1"
+        style="display: flex; justify-content: space-between; margin-top: 20px"
+      >
+        <div>
+          <p class="head" style="color: black">OUR GOLD TRUSTEE</p>
+          <img
+            src="https://bksmygold-staging.s3.ap-south-1.amazonaws.com/emails/vistra.png"
+            alt="vistra"
+            width="150"
+          />
+        </div>
+        <div style="text-align: center" class="span1">
+          <p>*Note : This is computer generated Invoice.</p>
+          <p>No signature required</p>
+        </div>
+      </div>
+      <p style="text-align: center; font-weight: 600">
+        No Cancel • No Refund • No Return
+      </p>
+    </div>
+  </body>
+</html>
