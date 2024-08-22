@@ -8,9 +8,10 @@
       * {
         margin: 0;
         padding: 0;
+        font-family: 'Poppins', sans-serif;
       }
       .container {
-        max-width: 400px;
+        max-width: 350px;
         margin: 0px auto;
         height: 99vh;
         padding: 15px 15px;
@@ -51,6 +52,25 @@
         color: white;
         font-weight: 600;
       }
+
+      .btn2 {
+        outline: none;
+        cursor: pointer;
+        color: #cda46a;
+        padding: 10px 20px;
+        min-width: 350px;
+        margin-top: 20px;
+        border-radius: 10px;
+        border: 1px solid #cda46a;
+        background: linear-gradient(335deg, #49153a 0%, #26184b 100%);
+      }
+      .download {
+        font-size: 24px;
+        text-align: center;
+        color: white;
+        font-weight: 600;
+        margin-bottom: 50px;
+      }
     </style>
   </head>
   <body>
@@ -68,9 +88,20 @@
             alt="top"
             width="180px"
           />
-          <a href="#">
-            <button class="btn">Continue to App</button>
+          <p class="download">
+            Download <br />
+            MyGold App
+          </p>
+          <a href={`https://app.mygld.in/daan/${id}`}>
+            <button class="btn">Download</button>
           </a>
+          {id && isMandir ? (
+          <a href="/daan/login">
+            <button class="btn2">Continue To 'Daan' Gold Online</button>
+          </a>
+          ) : (
+          <a href="#"> <button class="btn2">Scan Again to Continue</button> </a
+          >)}
         </div>
       </div>
     </div>
